@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- stroke width -->
+    <dimen name="stroke_width_default">1dp</dimen>
+    <dimen name="stroke_width_small_components">1.6dp</dimen>
+    <dimen name="stroke_width_medium_components">2dp</dimen>
+    <dimen name="stroke_width_large_components">3dp</dimen>
+</resources>

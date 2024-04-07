@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.codi.GalleryCodiFragment"
+    android:id="@+id/galleryMainLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+        android:id="@+id/accountDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/galleryLayoutCont"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountDetailToolbar"
+        app:layout_constraintVertical_bias="0.0">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/qrCaptureImg"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_qr"
+            android:contentDescription="QR Code"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.246" />
+
+        <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+            android:id="@+id/capturarBtnQR"
+            style="@style/ColoredButtonV2"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:allowClickWhenDisabled="true"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Capturar QR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qrCaptureImg"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+            style="@style/ColoredButtonV2"
+            android:id="@+id/confirmarBtnQR"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/dp_42"
+            android:layout_marginBottom="@dimen/dp_80"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="@string/confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:allowClickWhenDisabled="true"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

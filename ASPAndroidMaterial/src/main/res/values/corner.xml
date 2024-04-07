@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_size_extra_large_components">12dp</dimen>
+    <dimen name="corner_size_large_components">8dp</dimen>
+    <dimen name="corner_size_medium_components">6dp</dimen>
+    <dimen name="corner_size_small_components">4dp</dimen>
+
+    <!-- chip_corners -->
+    <dimen name="corner_size_chips">24dp</dimen>
+
+    <dimen name="corner_size_bottomsheet">16dp</dimen>
+    <dimen name="corner_size_tab_toggle_indicator">50dp</dimen>
+    <dimen name="corner_size_tab_indicator">2dp</dimen>
+
+</resources>

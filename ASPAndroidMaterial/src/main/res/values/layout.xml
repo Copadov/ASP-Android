@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_0">0dp</dimen>
+    <dimen name="grid_0_5">4dp</dimen>
+    <dimen name="grid_1">8dp</dimen>
+    <dimen name="grid_1_5">12dp</dimen>
+    <dimen name="grid_2">16dp</dimen>
+    <dimen name="grid_2_5">20dp</dimen>
+    <dimen name="grid_3">24dp</dimen>
+    <dimen name="grid_3_5">28dp</dimen>
+    <dimen name="grid_4">32dp</dimen>
+    <dimen name="grid_4_5">36dp</dimen>
+    <dimen name="grid_5">40dp</dimen>
+    <dimen name="grid_5_5">44dp</dimen>
+    <dimen name="grid_6_0">48dp</dimen>
+    <dimen name="grid_6_5">52dp</dimen>
+    <dimen name="grid_7">56dp</dimen>
+    <dimen name="grid_7_5">60dp</dimen>
+    <dimen name="grid_8">64dp</dimen>
+    <dimen name="grid_8_5">68dp</dimen>
+    <dimen name="grid_9">72dp</dimen>
+    <dimen name="grid_9_5">76dp</dimen>
+    <dimen name="grid_10">80dp</dimen>
+    <dimen name="grid_10_5">84dp</dimen>
+    <dimen name="grid_11">88dp</dimen>
+    <dimen name="grid_11_5">92dp</dimen>
+    <dimen name="grid_12">96dp</dimen>
+    <dimen name="grid_25">200dp</dimen>
+    <dimen name="default_shimmer_title_width">236dp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/asp_icon_button_ripple_color">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/asp_icon_button_background_color" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/asp_icon_button_line_color" />
+            <corners android:bottomRightRadius="@dimen/dp_16"
+                android:bottomLeftRadius="@dimen/dp_16"
+                android:topRightRadius="@dimen/dp_16"
+                android:topLeftRadius="@dimen/dp_16"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/mask">
+        <inset android:insetBottom="1dp"
+            android:insetLeft="1dp"
+            android:insetRight="1dp"
+            android:insetTop="1dp">
+            <shape android:shape="rectangle">
+                <solid android:color="@android:color/white"/>
+                <corners android:bottomRightRadius="@dimen/dp_16"
+                    android:bottomLeftRadius="@dimen/dp_16"
+                    android:topRightRadius="@dimen/dp_16"
+                    android:topLeftRadius="@dimen/dp_16"/>
+            </shape>
+        </inset>
+    </item>
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="1dp" />
+
+            <solid android:color="#00CCCCCC" />
+
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+</ripple>

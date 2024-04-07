@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/asp_bg_degradado">
+
+    <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:text="@string/credit_payment_my_credits"
+        android:textAppearance="@style/Ubuntu.w700.color_white.s20"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/sp_12"
+        android:layout_marginStart="@dimen/dp_20"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginBottom="@dimen/dp_80">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/c_credit_actives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginHorizontal="@dimen/sp_16"
+                app:cardCornerRadius="@dimen/dp_18"
+                app:contentPaddingRight="@dimen/dp_16"
+                app:contentPaddingBottom="@dimen/dp_8"
+                app:contentPaddingLeft="@dimen/dp_16"
+                app:contentPaddingTop="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_32">
+
+                <TextView
+                    android:id="@+id/tv_empty_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+                    android:text="No cuenta con ningún credito.\nSi estás interesado, acude a una sucursal\npara solicitar más información."
+                    android:visibility="visible"
+                    android:layout_marginBottom="@dimen/dp_32"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_credit_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_user_credit"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

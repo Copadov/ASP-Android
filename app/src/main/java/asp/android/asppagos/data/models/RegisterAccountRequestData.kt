@@ -1,0 +1,25 @@
+package asp.android.asppagos.data.models
+
+data class RegisterAccountRequestData(
+    val actuoCuentaPropia: String,
+    val apellidoMaterno: String,
+    val apellidoPaterno: String,
+    val celular: String,
+    val codigoAutorizacion: String,
+    val codigoPostal: String,
+    val codigoPromocion: String,
+    val coloniaId: Int,
+    val coloniaNombre: String,
+    val curp: String,
+    val domicilio: String,
+    val email: String,
+    val geolocalizacion: Geolocalizacion,
+    val dispositivoId: String,
+    val header: Header,
+    val ineValidado: Boolean,
+    val primerNombre: String,
+    val rfc: String,
+    val aceptaTerminos: String,
+    val aceptaUsoBiometricos: String,
+    val password: String,
+)

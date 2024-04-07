@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerLogin">
+
+    <fragment
+        android:id="@+id/registerLogin"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.RegisterLogin"
+        android:label="fragment_register_login"
+        tools:layout="@layout/fragment_register_login" >
+        <action
+            android:id="@+id/action_registerLogin_to_registerInfo"
+            app:destination="@id/registerInfo"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerInfo"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.RegisterInfo"
+        android:label="fragment_register_info"
+        tools:layout="@layout/fragment_register_info" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_registerInfo_to_recoverPassFragment"
+            app:destination="@id/recoverPassFragment" />
+        <action
+            android:id="@+id/action_registerInfo_to_revalidateAccountFragment"
+            app:destination="@id/revalidateAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerRequestFragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.RegisterRequestFragment"
+        android:label="fragment_register_request"
+        tools:layout="@layout/fragment_register_request" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_registerRequestFragment_to_ocrDataValidation"
+            app:destination="@id/ocrDataValidation" />
+        <action
+            android:id="@+id/action_registerRequestFragment_to_formDataUser11Fragment"
+            app:destination="@id/formDataUser11Fragment" />
+        <action
+            android:id="@+id/action_registerRequestFragment_to_formDataUser10Fragment"
+            app:destination="@id/formDataUser10Fragment" />
+        <action
+            android:id="@+id/action_registerRequestFragment_to_formDataUser8Fragment"
+            app:destination="@id/formDataUser8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ocrDataValidation"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.OcrDataValidationFragment"
+        android:label="fragment_ocr_data_validation"
+        tools:layout="@layout/fragment_ocr_data_validation" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_ocrDataValidation_to_dataConfirmationFragment"
+            app:destination="@id/dataConfirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataConfirmationFragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.DataConfirmationFragment"
+        android:label="fragment_data_confirmation"
+        tools:layout="@layout/fragment_data_confirmation" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_dataConfirmationFragment_to_formDataUserFragment"
+            app:destination="@id/formDataUserFragment" />
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_dataConfirmationFragment_to_ocrDataValidation"
+            app:destination="@id/ocrDataValidation" />
+    </fragment>
+    <action
+        app:launchSingleTop="true"
+        android:id="@+id/action_global_registerLogin"
+        app:destination="@id/registerLogin" />
+    <action
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"
+        app:launchSingleTop="true"
+        android:id="@+id/action_global_registerRequestFragment"
+        app:destination="@id/registerRequestFragment" />
+    <fragment
+        android:id="@+id/formDataUserFragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUserFragment"
+        android:label="fragment_form_data_user"
+        tools:layout="@layout/fragment_form_data_user" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUserFragment_to_formDataUser2Fragment"
+            app:destination="@id/formDataUser2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formDataUser2Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser2Fragment"
+        android:label="fragment_form_data_user2"
+        tools:layout="@layout/fragment_form_data_user" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser2Fragment_to_formDataUser3Fragment"
+            app:destination="@id/formDataUser3Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_form_data_user"
+        android:id="@+id/formDataUser3Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser3Fragment"
+        android:label="FormDataUser3Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser3Fragment_to_formDataUser4Fragment"
+            app:destination="@id/formDataUser4Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_form_data_user"
+        android:id="@+id/formDataUser4Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser4Fragment"
+        android:label="FormDataUser4Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser4Fragment_to_formDataUser5Fragment"
+            app:destination="@id/formDataUser5Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_form_data_user"
+        android:id="@+id/formDataUser5Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser5Fragment"
+        android:label="FormDataUser5Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser5Fragment_to_formDataUser6Fragment"
+            app:destination="@id/formDataUser6Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_form_data_user"
+        android:id="@+id/formDataUser6Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser6Fragment"
+        android:label="FormDataUser6Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser6Fragment_to_formDataUser7Fragment"
+            app:destination="@id/formDataUser7Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_form_data_user"
+        android:id="@+id/formDataUser7Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser7Fragment"
+        android:label="FormDataUser7Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser7Fragment_to_formDataUser8Fragment"
+            app:destination="@id/formDataUser8Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_form_data_user"
+        android:id="@+id/formDataUser8Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser8Fragment"
+        android:label="FormDataUser8Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser8Fragment_to_formDataUser9Fragment"
+            app:destination="@id/formDataUser9Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_register_login"
+        android:id="@+id/formDataUser9Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser9Fragment"
+        android:label="FormDataUser9Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser9Fragment_to_formDataUser10Fragment"
+            app:destination="@id/formDataUser10Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_code_pin_validation"
+        android:id="@+id/formDataUser10Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser10Fragment"
+        android:label="FormDataUser10Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser10Fragment_to_formDataUser11Fragment"
+            app:destination="@id/formDataUser11Fragment" />
+        <action
+            android:id="@+id/action_formDataUser10Fragment_to_formDataUserBeneficiaryInfo"
+            app:destination="@id/formDataUserBeneficiaryInfo" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_create_password"
+        android:id="@+id/formDataUser11Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser11Fragment"
+        android:label="FormDataUser11Fragment" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUser11Fragment_to_formDataUser12Fragment"
+            app:destination="@id/formDataUser12Fragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_create_pin"
+        android:id="@+id/formDataUser12Fragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUser12Fragment"
+        android:label="FormDataUser12Fragment" >
+        <action
+            android:id="@+id/action_formDataUser12Fragment_to_welcomeViewFragment"
+            app:destination="@id/welcomeViewFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_welcome_view"
+        android:id="@+id/welcomeViewFragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.WelcomeViewFragment"
+        android:label="WelcomeViewFragment" />
+    <action
+        android:id="@+id/action_global_welcomeViewFragment"
+        app:destination="@id/welcomeViewFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/formDataUserBeneficiaryInfo"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUserBeneficiaryInfo"
+        android:label="fragment_form_data_user_beneficiary_info"
+        tools:layout="@layout/fragment_form_data_user_beneficiary_info" >
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_formDataUserBeneficiaryInfo_to_formDataUserBeneficiary2"
+            app:destination="@id/formDataUserBeneficiary2" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_form_data_user"
+        android:id="@+id/formDataUserBeneficiary2"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.FormDataUserBeneficiary2"
+        android:label="FormDataUserBeneficiary2" >
+        <action
+            android:id="@+id/action_formDataUserBeneficiary2_to_formDataUser11Fragment"
+            app:destination="@id/formDataUser11Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recoverPassFragment"
+        android:name="asp.android.asppagos.ui.fragments.onboarding.RecoverPassFragment"
+        android:label="RecoverPassFragment" />
+    <fragment
+        android:id="@+id/revalidateAccountFragment"
+        android:name="asp.android.asppagos.ui.fragments.RevalidateAccountFragment"
+        android:label="RevalidateAccountFragment" />
+</navigation>

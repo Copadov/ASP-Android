@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="top"
+        android:layout_width="wrap_content"
+        android:src="@drawable/up_wave"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:src="@drawable/low_wave"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.onboarding.RegisterInfo">
+
+        <asp.android.aspandroidmaterial.ui.toolbars.ASPTMaterialToolbar
+            android:id="@+id/toolbarRegisterInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/register_info_hello_string_template"
+            android:textColor="#242142"
+            android:textSize="24sp"
+            android:fontFamily="@font/ubuntu_bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/icon_login_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarRegisterInfo"
+            android:contentDescription="@string/todo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ASPMaterialEditTextLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#242142"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+            <asp.android.aspandroidmaterial.ui.inputs.ASPMaterialEditText
+                android:id="@+id/inputPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/register_info_hint_pass_input"
+                android:inputType="textPassword">
+
+            </asp.android.aspandroidmaterial.ui.inputs.ASPMaterialEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/recoverOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/register_info_forgot_password_text_hint"
+            android:textColor="#00306A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ASPMaterialEditTextLayout" />
+
+        <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButton
+            android:id="@+id/buttonLoginAccess"
+            style="@style/ColoredButtonV2"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="24dp"
+            android:enabled="false"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="@string/register_info_button_accept"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonValidation" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonValidation"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:drawableStart="@drawable/asp_huella"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/asp_icon_button_background"
+            android:padding="5dp"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            android:drawablePadding="8dp"
+            android:text="@string/register_info_login_biometrics_button_text"
+            android:textAllCaps="false"
+            android:textColor="@color/asp_icon_button_text_color"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:fontFamily="@font/roboto_bold"
+            android:id="@+id/versionAppText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Version 1.0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

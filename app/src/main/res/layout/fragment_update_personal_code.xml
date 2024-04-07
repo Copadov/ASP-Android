@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- toolbar -->
+    <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintBottom_toTopOf="@id/container_button"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingBottom="@dimen/dp_32"
+            android:paddingHorizontal="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/addNewCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Ubuntu.w700.color_242142.s20"
+                android:text="@string/update_personal_pin_title"
+                android:layout_marginTop="@dimen/dp_32"/>
+
+            <com.chaos.view.PinView
+                android:id="@+id/createPinValidator"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_18"
+                android:cursorVisible="true"
+                android:inputType="numberPassword"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                app:cursorWidth="@dimen/dp_2"
+                app:hideLineWhenFilled="false"
+                app:itemCount="4"
+                app:itemHeight="65dp"
+                app:itemRadius="@dimen/dp_16"
+                app:itemSpacing="@dimen/dp_8"
+                app:itemWidth="52dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:lineColor="@color/pinlinecolor"
+                app:lineWidth="@dimen/dp_2"
+                app:viewType="rectangle" />
+
+            <TextView
+                android:id="@+id/addConfirmCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Ubuntu.w700.color_242142.s20"
+                android:text="@string/validate_personal_pin_title"
+                android:layout_marginTop="@dimen/dp_32"/>
+
+            <com.chaos.view.PinView
+                android:id="@+id/validatePinValidator"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_18"
+                android:cursorVisible="true"
+                android:inputType="numberPassword"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                app:cursorWidth="@dimen/dp_2"
+                app:hideLineWhenFilled="false"
+                app:itemCount="4"
+                app:itemHeight="65dp"
+                app:itemRadius="@dimen/dp_16"
+                app:itemSpacing="@dimen/dp_8"
+                app:itemWidth="52dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:lineColor="@color/pinlinecolor"
+                app:lineWidth="@dimen/dp_2"
+                app:viewType="rectangle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresa tus 4 dígitos."
+                android:layout_marginTop="@dimen/dp_16"
+                android:textAppearance="@style/Ubuntu.w400.color_333333.s12"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/margin_bottom_button">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:text="@string/reject"
+            android:enabled="false"
+            app:layout_constraintEnd_toStartOf="@id/guideline"/>
+
+        <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+            android:id="@+id/btn_accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/accept"
+            android:enabled="false"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            app:layout_constraintStart_toEndOf="@id/guideline"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

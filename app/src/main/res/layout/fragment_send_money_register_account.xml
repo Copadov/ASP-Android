@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/asp_bg_degradado">
+
+    <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:text="@string/send_money_register_account"
+        android:textAppearance="@style/Ubuntu.w700.color_white.s20"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:textSize="@dimen/sp_18" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginBottom="@dimen/dp_16"
+        app:layout_constraintBottom_toTopOf="@id/ctv_add_to_favorites">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:minHeight="@dimen/dp_22"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:background="@drawable/ic_rectangle_with_corner">
+
+            <TextView
+                android:id="@+id/tv_type_register_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+                tools:text="Persona fisica"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="@dimen/dp_16" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_32"
+                android:background="@drawable/ic_rectangle_with_corner"
+                android:backgroundTint="@color/gray_f3f2f5"
+                app:layout_constraintTop_toBottomOf="@id/tv_type_register_account"
+                android:orientation="vertical">
+
+                <asp.android.aspandroidmaterial.ui.inputs.ASPTextNumberInput
+                    android:id="@+id/ti_clabe"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="20dp"
+                    android:text="Banco*"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_8"
+                    app:boxCornerRadiusBottomEnd="@dimen/dp_16"
+                    app:boxCornerRadiusBottomStart="@dimen/dp_16"
+                    app:boxCornerRadiusTopEnd="@dimen/dp_16"
+                    app:boxCornerRadiusTopStart="@dimen/dp_16"
+                    app:boxStrokeColor="@color/color_242142"
+                    app:hintEnabled="false"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/tv_bank_selectable"
+                        android:hint="Selecciona"
+                        android:textAppearance="@style/Ubuntu.w400.color_818084.s16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <asp.android.aspandroidmaterial.ui.inputs.ASPTextInput
+                    android:id="@+id/ti_name"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <asp.android.aspandroidmaterial.ui.inputs.ASPTextInput
+                    android:id="@+id/ti_last_name"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <asp.android.aspandroidmaterial.ui.inputs.ASPTextInput
+                    android:id="@+id/ti_second_last_name"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <asp.android.aspandroidmaterial.ui.inputs.ASPTextInput
+                    android:id="@+id/ti_business_name"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <asp.android.aspandroidmaterial.ui.inputs.ASPTextInput
+                    android:id="@+id/ti_alias"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/ctv_add_to_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        app:layout_constraintBottom_toTopOf="@id/b_continue_send_money"
+        android:fontFamily="@font/ubuntu_bold"
+        android:buttonTint="@color/line_selected"
+        android:text="Añadir cuenta a favoritos"
+        android:layout_marginHorizontal="@dimen/dp_16"/>
+
+    <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+        style="@style/ColoredButtonV2"
+        android:id="@+id/b_continue_send_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_42"
+        android:layout_marginBottom="@dimen/margin_bottom_button"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="@string/confirm"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

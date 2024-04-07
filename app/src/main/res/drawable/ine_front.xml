@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="217dp"
+    android:height="131dp"
+    android:viewportWidth="217"
+    android:viewportHeight="131">
+  <group>
+    <clip-path
+        android:pathData="M0,0h217v131h-217z"/>
+    <path
+        android:pathData="M217,15.99V114.91C217,123.79 209.76,131 200.82,131H16.18C7.24,131 0,123.79 0,114.91V16.09C0,15.68 0.01,15.27 0.05,14.86C0.62,7.37 6.35,1.31 13.72,0.18H13.73C14.53,0.06 15.35,0 16.18,0H200.82C201.03,0 201.23,0 201.44,0.01L202.58,0.09C210.66,0.96 216.95,7.74 217,15.99Z"
+        android:fillColor="#EAE9E8"/>
+    <path
+        android:pathData="M217,15.99C215.79,18.81 213.56,21.23 209.66,22.38C198.42,25.7 165.63,32.74 108.84,32.28H108.63C51.84,32.74 19.05,25.7 7.82,22.38C3.4,21.08 1.13,18.15 0.05,14.86C0.62,7.37 6.35,1.31 13.72,0.18H13.73L16.18,0H200.82C201.03,0 201.23,0 201.43,0.01L202.58,0.09C210.65,0.96 216.95,7.74 217,15.99Z"
+        android:fillColor="#D8D7D6"/>
+    <path
+        android:pathData="M176.25,77.75H89.55V86.7H176.25V77.75Z"
+        android:fillColor="#D8D7D6"/>
+    <path
+        android:pathData="M203.73,91.89H89.55V100.84H203.73V91.89Z"
+        android:fillColor="#D8D7D6"/>
+    <path
+        android:pathData="M203.73,105.55H89.55V114.51H203.73V105.55Z"
+        android:fillColor="#D8D7D6"/>
+    <path
+        android:pathData="M155.38,45H90V53.48H155.38V45Z"
+        android:fillColor="#D8D7D6"/>
+    <path
+        android:pathData="M188.55,57.25H90V65.73H188.55V57.25Z"
+        android:fillColor="#D8D7D6"/>
+    <path
+        android:pathData="M27,43L60,43A11,11 0,0 1,71 54L71,104A11,11 0,0 1,60 115L27,115A11,11 0,0 1,16 104L16,54A11,11 0,0 1,27 43z"
+        android:fillColor="#D8D7D6"/>
+    <path
+        android:pathData="M29,103C29,96.92 33.92,92 40,92H44C50.08,92 55,96.92 55,103V116H29V103Z"
+        android:fillColor="#EAE9E8"/>
+    <path
+        android:pathData="M42.5,70.5m-13.5,0a13.5,13.5 0,1 1,27 0a13.5,13.5 0,1 1,-27 0"
+        android:fillColor="#EAE9E8"/>
+  </group>
+</vector>

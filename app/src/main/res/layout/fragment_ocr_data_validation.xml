@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:src="@drawable/up_wave"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:src="@drawable/low_wave"
+            android:layout_height="wrap_content" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:context=".ui.fragments.onboarding.OcrDataValidationFragment">
+
+            <asp.android.aspandroidmaterial.ui.toolbars.ASPTMaterialToolbar
+                android:id="@+id/ASPTMaterialToolbarOCRDataValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+                style="@style/ColoredButtonV2"
+                android:id="@+id/captureFrontButton"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/ocr_data_capture_ine_front_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFront" />
+
+            <ImageView
+                android:id="@+id/iv_help_front"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:src="@drawable/ic_info"
+                app:layout_constraintTop_toTopOf="@id/captureFrontButton"
+                app:layout_constraintBottom_toBottomOf="@id/captureFrontButton"
+                app:layout_constraintStart_toEndOf="@id/captureFrontButton"
+                android:layout_marginStart="@dimen/dp_4"/>
+
+            <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+                android:id="@+id/captureRearButton"
+                style="@style/ColoredButtonV2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="48dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/ocr_data_capture_ine_rear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewRear" />
+
+            <ImageView
+                android:id="@+id/iv_help_rear"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:src="@drawable/ic_info"
+                app:layout_constraintTop_toTopOf="@id/captureRearButton"
+                app:layout_constraintBottom_toBottomOf="@id/captureRearButton"
+                app:layout_constraintStart_toEndOf="@id/captureRearButton"
+                android:layout_marginStart="@dimen/dp_4"/>
+
+            <ImageView
+                style="@style/ColoredButtonV2"
+                android:id="@+id/imageViewRear"
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/ine_rear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/captureFrontButton"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/imageViewFront"
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ine_front"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ASPTMaterialToolbarOCRDataValidation"
+                android:contentDescription="@string/todo" />
+
+            <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+                android:id="@+id/continueButton"
+                style="@style/ColoredButtonV2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/ocr_validation_continue_button_text"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/captureRearButton"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <!-- Bottom Sheet -->
+
+    <FrameLayout
+        android:id="@+id/bottom_sheet_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

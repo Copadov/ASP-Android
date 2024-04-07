@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_aspmaterial_components">ASPMaterialComponents</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="todo">todo</string>
+    <string name="dashboard_main_text_profile_mock">Hola Antonio</string>
+
+    <string name="dashboard_main_my_cards_option_text">Tarjetas</string>
+    <string name="dashboard_main_my_movements_option_text">Movimientos</string>
+    <string name="dashboard_main_codi_option_text">CoDi</string>
+    <string name="dashboard_main_config_option_text">Ajustes</string>
+    <string name="close_button_text">cerrar</string>
+</resources>

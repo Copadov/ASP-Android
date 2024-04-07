@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "470113126283",
+    "firebase_url": "https://pruebasfcm-c812a.firebaseio.com",
+    "project_id": "pruebasfcm-c812a",
+    "storage_bucket": "pruebasfcm-c812a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470113126283:android:e8e8efecaea0e4a602d18e",
+        "android_client_info": {
+          "package_name": "asp.android.asppaagos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470113126283-3m95k367tcuh53os9hr94sr78tpj07c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi3Tfjt9nVimnizuAe-MgigxBkmTdrCdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470113126283-3m95k367tcuh53os9hr94sr78tpj07c6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "470113126283-aadq33saijki9uu6rq15pt3ri3brieji.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aspintegraopciones.codi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470113126283:android:b63c1d8b40c8b20c",
+        "android_client_info": {
+          "package_name": "com.codi.aspintegraopciones.aspcodi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470113126283-3m95k367tcuh53os9hr94sr78tpj07c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi3Tfjt9nVimnizuAe-MgigxBkmTdrCdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470113126283-3m95k367tcuh53os9hr94sr78tpj07c6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "470113126283-aadq33saijki9uu6rq15pt3ri3brieji.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aspintegraopciones.codi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

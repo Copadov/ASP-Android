@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.codi.CobrarQrCodi"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/qrLayoutMain">
+    <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+        android:id="@+id/accountDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:hint=""
+                android:text=""
+                android:textAlignment="center"
+                android:textColorHint="@color/asp_edittext_text_color"
+                android:textSize="17dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.148" />
+
+            <TextView
+                android:id="@+id/accountNumber"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColorHint="@color/asp_edittext_text_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userName"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/amountNumber"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColorHint="@color/asp_edittext_text_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/accountNumber"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/conceptTxt"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColorHint="@color/asp_edittext_text_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/amountNumber"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/referencesNumber"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColorHint="@color/asp_edittext_text_color"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conceptTxt"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/idIVQrcode"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:contentDescription="QR Code"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/referencesNumber"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/supportCodiTxt"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/code_codi_qr_cobrar"
+                android:textAlignment="center"
+                android:textColor="@color/asp_edittext_text_color"
+                android:textSize="17.4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idIVQrcode"
+                app:layout_constraintVertical_bias="0.07" />
+
+            <ImageButton
+                android:id="@+id/ivShareQR"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="@dimen/dp_64"
+                android:background="@drawable/ic_circle_not_shadow"
+                android:backgroundTint="@color/line_selected"
+                android:padding="@dimen/dp_18"
+                android:rotation="180"
+                android:layout_marginTop="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/supportCodiTxt"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_share"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Compartir"
+                android:textAlignment="center"
+                android:textColor="@color/asp_edittext_text_color"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivShareQR"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ASPMaterialIconButton">
+        <attr name="imageIcon" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="ASPMaterialDotsIndicator">
+        <attr name="dotsCount" format="integer" />
+        <attr name="dotsSelected" format="integer" />
+    </declare-styleable>
+</resources>

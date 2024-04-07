@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/dashboardMainFragment">
+
+    <fragment
+        android:id="@+id/dashboardMainFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.DashboardMainFragment"
+        android:label="fragment_dashboard_main"
+        tools:layout="@layout/fragment_dashboard_main">
+        <action
+            android:id="@+id/action_dashboardMainFragment_to_myCardsFragment"
+            app:destination="@id/myCardsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashboardMainFragment_to_myMovementsFragment"
+            app:destination="@id/myMovementsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashboardMainFragment_to_coDiModuleFragment"
+            app:destination="@id/coDiModuleFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashboardMainFragment_to_configurationOptionsFragment"
+            app:destination="@id/configurationOptionsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_dashboardMainFragment_to_detailPagarCodiFragment"
+            app:destination="@id/detailPagarCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right">
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/myCardsFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.MyCardsFragment"
+        android:label="fragment_my_cards"
+        tools:layout="@layout/fragment_my_cards">
+        <action
+            android:id="@+id/action_myCardsFragment_to_accountDetailFragment"
+            app:destination="@id/accountDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_myCardsFragment_to_virtualCardFragment"
+            app:destination="@id/virtualCardFragment" />
+        <action
+            android:id="@+id/action_myCardsFragment_to_requestCardFormFragment"
+            app:destination="@id/requestCardFormFragment" />
+        <action
+            android:id="@+id/action_myCardsFragment_to_activePhysicCardInputFragment"
+            app:destination="@id/activePhysicCardInputFragment" />
+        <action
+            android:id="@+id/action_myCardsFragment_to_physicCardFragment"
+            app:destination="@id/physicCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myMovementsFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.MyMovementsFragment"
+        android:label="fragment_my_movements"
+        tools:layout="@layout/fragment_my_movements" />
+    <fragment
+        android:id="@+id/coDiModuleFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.CoDiModuleFragment"
+        android:label="fragment_co_di_module"
+        tools:layout="@layout/fragment_co_di_module">
+        <action
+            android:id="@+id/action_coDiModuleFragment_to_cobrarCodiFragment"
+            app:destination="@id/cobrarCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_coDiModuleFragment_to_pagarCodiFragment"
+            app:destination="@id/pagarCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_coDiModuleFragment_to_codiMovFragment"
+            app:destination="@id/codiMovFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_coDiModuleFragment_to_codiConfirmCodeFragment"
+            app:destination="@id/codiConfirmCodeFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/configurationOptionsFragment"
+        android:name="asp.android.asppagos.ui.fragments.configurations.ConfigurationOptionsFragment"
+        android:label="fragment_configuration_options"
+        tools:layout="@layout/fragment_configuration_options" />
+    <action
+        android:id="@+id/action_global_dashboardMainFragment"
+        app:destination="@id/dashboardMainFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"
+        app:popUpTo="@id/dashboardMainFragment"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/accountDetailFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.AccountDetailFragment"
+        android:label="fragment_account_detail"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"
+        tools:layout="@layout/fragment_account_detail" />
+    <fragment
+        android:id="@+id/virtualCardFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.VirtualCardFragment"
+        android:label="fragment_virtual_card"
+        tools:layout="@layout/fragment_virtual_card" />
+    <fragment
+        android:id="@+id/requestCardFormFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.RequestCardFormFragment"
+        android:label="RequestCardFormFragment">
+        <action
+            android:id="@+id/action_requestCardFormFragment_to_sendMoneyPersonalCodeSecurityFragment"
+            app:destination="@id/sendMoneyPersonalCodeSecurityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainSendMoneyFragment"
+        android:name="asp.android.asppagos.ui.fragments.send_money.MainSendMoneyFragment"
+        android:label="fragment_main_send_money"
+        tools:layout="@layout/fragment_main_send_money" />
+
+    <fragment
+        android:id="@+id/sendMoneyFavoriteDetailFragment"
+        android:name="asp.android.asppagos.ui.fragments.send_money.SendMoneyDetailFragment"
+        android:label="fragment_send_money_favorite_Detail"
+        tools:layout="@layout/fragment_send_money_detail" />
+
+    <fragment
+        android:id="@+id/sendMoneyPersonalCodeSecurityFragment"
+        android:name="asp.android.asppagos.ui.fragments.send_money.SendMoneyCodeSecurityFragment"
+        android:label="fragment_send_money_personal_code_security"
+        tools:layout="@layout/fragment_code_security" />
+
+    <fragment
+        android:id="@+id/sendMoneySuccessInfoFragment"
+        android:name="asp.android.asppagos.ui.fragments.send_money.SendMoneySuccessInfoFragment"
+        android:label="fragment_send_money_success_info"
+        tools:layout="@layout/fragment_success_info" />
+
+    <fragment
+        android:id="@+id/receiveMoneyMainFragment"
+        android:name="asp.android.asppagos.ui.fragments.recive_money.ReceiveMoneyMainFragment"
+        android:label="fragment_receiveMoneyMainFragment"
+        tools:layout="@layout/fragment_receive_money_main" />
+
+    <fragment
+        android:id="@+id/receiveMoneyInfoFragment"
+        android:name="asp.android.asppagos.ui.fragments.recive_money.ReceiveMoneyInfoFragment"
+        android:label="fragment_receiveMoneyInfoFragment"
+        tools:layout="@layout/fragment_receive_money_info" />
+
+    <fragment
+        android:id="@+id/creditPaymentMainFragment"
+        android:name="asp.android.asppagos.ui.fragments.credit_payment.CreditPaymentMainFragment"
+        android:label="fragment_credit_payment_main"
+        tools:layout="@layout/fragment_credit_payment_main" />
+
+    <fragment
+        android:id="@+id/creditPaymentInfoFragment"
+        android:name="asp.android.asppagos.ui.fragments.credit_payment.CreditPaymentInfoFragment"
+        android:label="fragment_credit_payment_info"
+        tools:layout="@layout/fragment_credit_payment_info" />
+
+    <fragment
+        android:id="@+id/creditPaymentCodeSecurityFragment"
+        android:name="asp.android.asppagos.ui.fragments.credit_payment.CreditPaymentCodeSecurityFragment"
+        android:label="fragment_credit_payment_code_security"
+        tools:layout="@layout/fragment_code_security" />
+
+    <fragment
+        android:id="@+id/creditPaymentSuccessInfoFragment"
+        android:name="asp.android.asppagos.ui.fragments.credit_payment.CreditPaymentSuccessInfoFragment"
+        android:label="fragment_credit_payment_success_info"
+        tools:layout="@layout/fragment_success_info" />
+
+    <fragment
+        android:id="@+id/sendMoneyRegisterAccountFragment"
+        android:name="asp.android.asppagos.ui.fragments.send_money.SendMoneyRegisterAccountFragment"
+        android:label="fragment_send_money_register_account"
+        tools:layout="@layout/fragment_send_money_register_account" />
+    <fragment
+        android:id="@+id/cobrarCodiFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.CobrarCodiFragment"
+        android:label="fragment_cobrar_codi"
+        tools:layout="@layout/fragment_cobrar_codi">
+        <action
+            android:id="@+id/action_cobrarCodiFragment_to_cobrarQrCodi"
+            app:destination="@id/cobrarQrCodi"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_cobrarCodiFragment_to_coDiModuleFragment"
+            app:destination="@id/coDiModuleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagarCodiFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.PagarCodiFragment"
+        android:label="fragment_pagar_codi"
+        tools:layout="@layout/fragment_pagar_codi">
+        <action
+            android:id="@+id/action_pagarCodiFragment_to_galleryCodiFragment"
+            app:destination="@id/galleryCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_pagarCodiFragment_to_detailPagarCodiFragment"
+            app:destination="@id/detailPagarCodiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cobrarQrCodi"
+        android:name="asp.android.asppagos.ui.fragments.codi.CobrarQrCodi"
+        android:label="fragment_cobrar_qr_codi"
+        tools:layout="@layout/fragment_cobrar_qr_codi">
+
+        <action
+            android:id="@+id/action_cobrarQrCodi_to_cobrarCodiFragment"
+            app:destination="@id/cobrarCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_cobrarQrCodi_to_codiModuleFragment"
+            app:destination="@id/coDiModuleFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/codiMovFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.CodiMovFragment"
+        android:label="fragment_codi_mov"
+        tools:layout="@layout/fragment_codi_mov">
+        <action
+            android:id="@+id/action_codiMovFragment_to_detailMovCodiFragment"
+            app:destination="@id/detailMovCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_codiMovFragment_to_codiDevPayFragment"
+            app:destination="@id/codiDevPayFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryCodiFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.GalleryCodiFragment"
+        android:label="fragment_gallery_codi"
+        tools:layout="@layout/fragment_gallery_codi">
+        <action
+            android:id="@+id/action_galleryCodiFragment_to_detailPagarCodiFragment"
+            app:destination="@id/detailPagarCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_galleryCodiFragment_to_pagarCodiFragment"
+            app:destination="@id/pagarCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPagarCodiFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.DetailPagarCodiFragment"
+        android:label="fragment_detail_pagar_codi"
+        tools:layout="@layout/fragment_detail_pagar_codi">
+        <action
+            android:id="@+id/action_detailPagarCodiFragment_to_payQrConfirmFragment"
+            app:destination="@id/payQrConfirmFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_detailPagarCodiFragment_to_galleryCodiFragment"
+            app:destination="@id/galleryCodiFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_detailPagarCodiFragment_to_codiDevDetailFragment"
+            app:destination="@id/codiDevDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentServicesMainFragment"
+        android:name="asp.android.asppagos.ui.fragments.payment_services.PaymentServicesMainFragment"
+        android:label="fragment_payment_services_main"
+        tools:layout="@layout/fragment_payment_services_main">
+        <action
+            android:id="@+id/action_paymentServicesMainFragment_to_myMovementsFragment"
+            app:destination="@id/myMovementsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentServicesInfoFragment"
+        android:name="asp.android.asppagos.ui.fragments.payment_services.PaymentServicesInfoFragment"
+        android:label="fragment_payment_services_info"
+        tools:layout="@layout/fragment_payment_services_info" />
+    <fragment
+        android:id="@+id/activePhysicCardInputFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.ActivePhysicCardInputFragment"
+        android:label="ActivePhysicCardInputFragment" />
+    <fragment
+        android:id="@+id/physicCardFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.PhysicCardFragment"
+        android:label="PhysicCardFragment">
+        <action
+            android:id="@+id/action_physicCardFragment_to_pinAsignationFragment"
+            app:destination="@id/pinAsignationFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentServicesCodeSecurityFragment"
+        android:name="asp.android.asppagos.ui.fragments.payment_services.PaymentServicesCodeSecurityFragment"
+        android:label="fragment_payment_services_code_security"
+        tools:layout="@layout/fragment_code_security" />
+
+    <fragment
+        android:id="@+id/paymentServicesSuccessInfoFragment"
+        android:name="asp.android.asppagos.ui.fragments.payment_services.PaymentServicesSuccessInfoFragment"
+        android:label="fragment_payment_services_success_info"
+        tools:layout="@layout/fragment_success_info" />
+    <fragment
+        android:id="@+id/payQrConfirmFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.PayQrConfirmFragment"
+        android:label="fragment_pay_qr_confirm"
+        tools:layout="@layout/fragment_pay_qr_confirm">
+        <action
+            android:id="@+id/action_payQrConfirmFragment_to_coDiModuleFragment"
+            app:destination="@id/coDiModuleFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_payQrConfirmFragment_to_codiDevDetailFragment"
+            app:destination="@id/codiDevDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+
+    <fragment android:id="@+id/payPendingMovFragment"
+    android:name="asp.android.asppagos.ui.fragments.codi.PayPendingMovFragment"
+    android:label="fragment_pay_pending_mov"
+    tools:layout="@layout/fragment_pay_pending_mov">
+        <action
+            android:id="@+id/action_payPendingMovFragment_to_codiDevDetailFragment"
+            app:destination="@id/codiDevDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/codiConfirmCodeFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.CodiConfirmCodeFragment"
+        android:label="fragment_codi_confirm_code"
+        tools:layout="@layout/fragment_codi_confirm_code">
+        <action
+            android:id="@+id/action_codiConfirmCodeFragment_to_coDiModuleFragment"
+            app:destination="@id/coDiModuleFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/cellphoneRefillsFragment"
+        android:name="asp.android.asppagos.ui.fragments.refills.CellphoneRefillsMainFragment"
+        android:label="fragment_cellphone_refills"
+        tools:layout="@layout/fragment_cellphone_refills_main" />
+
+    <fragment
+        android:id="@+id/cellphoneRefillsAmountFragment"
+        android:name="asp.android.asppagos.ui.fragments.refills.CellphoneRefillsAmountFragment"
+        android:label="fragment_cellphone_refills_amount"
+        tools:layout="@layout/fragment_cellphone_refills_amount" />
+
+    <fragment
+        android:id="@+id/cellphoneRefillsAddNumberFragment"
+        android:name="asp.android.asppagos.ui.fragments.refills.CellphoneRefillsAddNumberFragment"
+        android:label="fragment_cellphone_refills_add_number"
+        tools:layout="@layout/fragment_cellphone_refills_add_number" />
+
+    <fragment
+        android:id="@+id/cellphoneRefillsCodeSecurityFragment"
+        android:name="asp.android.asppagos.ui.fragments.refills.CellphoneRefillsCodeSecurityFragment"
+        android:label="fragment_code_security"
+        tools:layout="@layout/fragment_code_security" />
+
+    <fragment
+        android:id="@+id/cellphoneRefillsSuccessInfoFragment"
+        android:name="asp.android.asppagos.ui.fragments.refills.CellphoneRefillsSuccessInfoFragment"
+        android:label="fragment_success_info"
+        tools:layout="@layout/fragment_success_info" />
+
+    <fragment
+        android:id="@+id/cellphonePlansRefillFragment"
+        android:name="asp.android.asppagos.ui.fragments.refills.CellphoneRefillsPlansFragment"
+        android:label="fragment_cellphone_refills_plans"
+        tools:layout="@layout/fragment_cellphone_refills_plans" />
+    <action
+        android:id="@+id/action_global_myMovementsFragment"
+        app:destination="@id/myMovementsFragment" />
+    <action
+        android:id="@+id/action_global_myCardsFragment"
+        app:destination="@id/myCardsFragment" />
+    <action
+        android:id="@+id/action_global_coDiModuleFragment"
+        app:destination="@id/coDiModuleFragment" />
+    <action
+        android:id="@+id/action_global_configurationOptionsFragment"
+        app:destination="@id/configurationOptionsFragment" />
+
+    <fragment
+        android:id="@+id/updatePersonalCodeFragment"
+        android:name="asp.android.asppagos.ui.fragments.configurations.UpdatePersonalCodeFragment"
+        android:label="fragment_update_personal_fragment"
+        tools:layout="@layout/fragment_update_personal_code" />
+
+    <fragment
+        android:id="@+id/updatePersonalCodeSmsFragment"
+        android:name="asp.android.asppagos.ui.fragments.configurations.UpdatePersonalCodeSmsFragment"
+        android:label="fragment_update_personal_code_sms"
+        tools:layout="@layout/fragment_update_personal_code_sms" />
+
+    <fragment
+        android:id="@+id/sendMoneyTypeAccountFragment"
+        android:name="asp.android.asppagos.ui.fragments.send_money.SendMoneyTypeAccountFragment"
+        android:label="fragment_send_money_type_account"
+        tools:layout="@layout/fragment_send_money_type_account" />
+
+    <fragment
+        android:id="@+id/detailMovCodiFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.DetailMovCodiFragment"
+        android:label="fragment_detail_mov_codi"
+        tools:layout="@layout/fragment_detail_mov_codi">
+        <action
+            android:id="@+id/action_detailMovCodiFragment_to_codiDevPayFragment"
+            app:destination="@id/codiDevPayFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/codiDevPayFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.CodiDevPayFragment"
+        android:label="fragment_codi_dev_pay"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"
+        tools:layout="@layout/fragment_codi_dev_pay">
+        <action
+            android:id="@+id/action_codiDevPayFragment_to_payPendingMovFragment"
+            app:destination="@id/payPendingMovFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_codiDevPayFragment_to_codiMovFragment"
+            app:destination="@id/codiMovFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_codiDevPayFragment_to_codiDevDetailFragment"
+            app:destination="@id/codiDevDetailFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/codiDevDetailFragment"
+        android:name="asp.android.asppagos.ui.fragments.codi.CodiDevDetailFragment"
+        android:label="fragment_codi_dev_detail"
+        tools:layout="@layout/fragment_codi_dev_detail">
+        <action
+            android:id="@+id/action_codiDevDetailFragment_to_codiMovFragment"
+            app:destination="@id/codiMovFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            android:id="@+id/action_codiDevDetailFragment_to_coDiModuleFragment"
+            app:destination="@id/coDiModuleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinAsignationFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.PinAsignationFragment"
+        android:label="PinAsignationFragment">
+        <action
+            android:id="@+id/action_pinAsignationFragment_to_assignationPinSuccessFragment"
+            app:destination="@id/assignationPinSuccessFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/assignationPinSuccessFragment"
+        android:name="asp.android.asppagos.ui.fragments.main.AssignationPinSuccessFragment"
+        android:label="AssignationPinSuccessFragment" />
+
+
+</navigation>

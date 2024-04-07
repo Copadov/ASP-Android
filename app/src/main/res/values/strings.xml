@@ -1,0 +1,310 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- ONBOARDING USER FORM VIEWS -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="email_template_message">
+    <font color="#242142">Ingresa a tu correo </font>
+    <font color="#7993BE">%1$s</font>
+    <font color="#242142"> \n y da click en la liga que te enviamos.</font>
+    </string>
+
+    <string name="onboarding_form_title_toolbar_text_address">Captura tu domicilio</string>
+    <string name="onboarding_form_title_toolbar_text_rfc">Completa tu RFC</string>
+    <string name="onboarding_form_title_toolbar_text_email">Captura tu e-mail</string>
+    <string name="onboarding_form_title_toolbar_text_account_activation">Activa tu cuenta</string>
+    <string name="onboarding_form_title_toolbar_text_phone_activation">Ingresa tu número\ncelular</string>
+    <string name="onboarding_form_title_toolbar_text_pin_validation">Te enviamos un código SMS</string>
+    <string name="onboarding_form_title_toolbar_text_pass_creation">Crea tu contraseña</string>
+    <string name="onboarding_form_title_toolbar_text_pin_creation">Crea tu código de\nseguridad personal</string>
+
+    <!-- ONBOARDING USER FORM PASSWORD CRITERIA -->
+    <string name="onboarding_form_title_toolbar_text_pass_criteria_1">Caracteres especiales</string>
+    <string name="onboarding_form_title_toolbar_text_pass_criteria_2">Letras minúsculas</string>
+    <string name="onboarding_form_title_toolbar_text_pass_criteria_3">Letras mayúsculas</string>
+    <string name="onboarding_form_title_toolbar_text_pass_criteria_4">Números</string>
+    <string name="onboarding_form_title_toolbar_text_pass_criteria_5">No usar 3 caracteres iguales seguidos</string>
+    <string name="onboarding_form_title_toolbar_text_pass_criteria_6">Mínimo 6 caracteres y máximo de 20</string>
+    <string name="onboarding_form_title_toolbar_text_pass_criteria_7">No incluir tu nombre</string>
+
+    <!-- ONBOARDING USER HINTS -->
+    <string name="onboarding_form_title_hin_street">Calle*</string>
+    <string name="onboarding_form_title_hin_num_ext">Número exterior*</string>
+    <string name="onboarding_form_title_hin_num_int">Número interior</string>
+    <string name="onboarding_form_title_hint_cp">Código Postal*</string>
+    <string name="onboarding_form_title_hint_colony">Colonia*</string>
+    <string name="onboarding_form_title_hint_city">Ciudad*</string>
+    <string name="onboarding_form_title_hint_rfc">XXXXXXXXXX*</string>
+    <string name="onboarding_form_title_hint_rfc_message">Ingresa tu homoclave, son los últimos 3 dígitos</string>
+    <string name="onboarding_form_title_hint_email_message">Ingresa tu correo personal</string>
+    <string name="onboarding_form_title_hint_account_activation_button_message">No recibí el correo, reenviar.</string>
+    <string name="onboarding_form_title_hint_phone_activation_button_message">Captura tu celular y te enviaremos un código de confirmación.</string>
+    <string name="onboarding_form_title_hint_email">e-mail*</string>
+    <string name="onboarding_form_title_hint_phone">Ingresa tu número celular*</string>
+
+    <!-- ONBOARDING USER TITLES -->
+    <string name="onboarding_form_title_street">Calle</string>
+    <string name="onboarding_form_title_num_ext">Número exterior</string>
+    <string name="onboarding_form_title_num_int">Número interior</string>
+    <string name="onboarding_form_title_cp">Código postal</string>
+    <string name="onboarding_form_title_colony">Colonia</string>
+    <string name="onboarding_form_title_city">Ciudad</string>
+    <string name="onboarding_form_title_rfc">RFC</string>
+    <string name="onboarding_form_title_phone">Teléfono</string>
+
+    <string name="onboarding_form_title_name_list_value">Nombre</string>
+    <string name="onboarding_form_title_lastname_list_value">Primer apellido</string>
+    <string name="onboarding_form_title_surname_list_value">Segundo apellido</string>
+    <string name="onboarding_form_title_birthdate_list_value">Fecha de nacimiento</string>
+    <string name="onboarding_form_title_genre_list_value">Género</string>
+    <string name="onboarding_form_title_curp_list_value">CURP</string>
+    <string name="onboarding_form_title_edit_data_user_toolbar_text">Captura tu %1$s</string>
+    <string name="onboarding_view_title_button_create_acccount">Regístrate</string>
+    <string name="onboarding_view_title_button_have_acccount">Iniciar sesión</string>
+    <string name="onboarding_view_dialog_title">¡BIENVENID@!</string>
+    <string name="onboarding_view_dialog_message">Si ya tienes cuenta con ASP, es necesario que te registres en esta nueva experiencia. Da click en el botón \"Regístrate\" y actualizaremos la información de tu cuenta.</string>
+    <string name="register_request_title_text">Regístrate</string>
+    <string name="register_request_subtitle_text">Necesitarás tu número celular e INE vigente</string>
+    <string name="register_request_button_text">Iniciar mi registro</string>
+    <string name="register_request_checkbox_text_1">Acepto</string>
+    <string name="register_request_checkbox_text_2">términos y condiciones</string>
+    <string name="register_request_checkbox_text_3">aviso de privacidad</string>
+    <string name="onboarding_create_pint_description_message_text">Este código de seguridad te permitirá autorizar operaciones en tu aplicación.\n\n Recuerda que este código de seguridad personal es el que usarás para autorizar tus operaciones.</string>
+    <string name="onboarding_create_pin_checker_message_text">Quiero usar mi huella para realizar operaciones e ingresar a las aplicaciones.</string>
+    <string name="register_infor_text_title_greetings_user_logged">¡Hola %1$s!</string>
+    <string name="register_url_terms_url">https://aspintegraopciones.com/fr/ayuda/terminos-condiciones.html</string>
+    <string name="register_url_priv_url">https://aspintegraopciones.com/fr/ayuda/terminos-condiciones.html</string>
+    <string name="dialog_close_option_text">cerrar</string>
+
+    <string name="title_activity_main2">MainActivity2</string>
+
+    <string name="title_home">Home</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main_dashboard">MainDashboardActivity</string>
+    <string name="dashboard_main_send_money_option_text">Envía\nDinero</string>
+    <string name="dashboard_main_receive_money_option_text">Recibe\nDinero</string>
+    <string name="dashboard_main_pay_asp_credit_option_text">Paga tu\ncrédito ASP</string>
+    <string name="dashboard_main_pay_services_option_text">Pagar\nServicios</string>
+    <string name="dashboard_main_phone_charging_option_text">Recargas\nTelefónicas</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_view_title_text">¡Listo!</string>
+    <string name="welcome_view_description_title_text">Vive la mejor experiencia\n digital con ASP Pago</string>
+    <string name="reboot_view_description_title_text">Se reiniciará la aplicación y podrás ingresar en la opción “Iniciar sesión”</string>
+    <string name="welcome_view_button_text">Ingresar</string>
+    <string name="pin_validation_continue_button">Continuar</string>
+    <string name="pin_validation_resend_text">No recibí el código, reenviar.</string>
+    <string name="pin_validation_capture_code_text">Captura el código recibido.</string>
+    <string name="create_pin_continue_button_text">Continuar</string>
+    <string name="create_pin_add_4_digits_text">Ingresa 4 dígitos numéricos.</string>
+    <string name="create_password_continue_button_text">Continuar</string>
+    <string name="create_password_hint_input_text">Ingresa tu contraseña</string>
+    <string name="data_confirmation_continue_button_text">Continuar</string>
+    <string name="data_confirmation_text_description">Recopilamos tus datos para facilitar el registro, necesitamos que nos confirmes tu información. \n\n En caso de tener un dato erróneo, puedes editarlo presionando el icono que se encuentra en cada campo.</string>
+    <string name="data_confirmation_toolbar_text_">Confirma tus datos</string>
+    <string name="form_data_user_continue_button_text">Continuar</string>
+    <string name="data_form_user_toolbar_text">Captura tu domicilio</string>
+    <string name="register_login_continue_button_text">Continuar</string>
+    <string name="register_login_hint_input_text">Ingresa tu número celular</string>
+    <string name="register_login_toolbar_text">Inicia sesión</string>
+    <string name="ocr_validation_continue_button_text">Continuar</string>
+    <string name="ocr_data_capture_ine_rear_text">Capturar INE reverso</string>
+    <string name="ocr_data_capture_ine_front_text">Capturar INE frente</string>
+    <string name="dashboard_main_detail_text">Detalle</string>
+    <string name="dashboard_main_amount_avalaible_text">Mi saldo disponible</string>
+    <string name="dashboard_main_my_account_text">Mi cuenta</string>
+    <string name="join_text">y</string>
+    <string name="send_money">Envía dinero</string>
+    <string name="send_money_account">Beneficiario</string>
+    <string name="send_money_favorites">Favoritos</string>
+
+    <!-- Send money  -->
+    <string name="send_money_register_account">Cuenta nueva</string>
+    <string name="send_money_code_security">Ingresa tu código de seguridad personal</string>
+    <string name="send_money_success">El pago fue realizado</string>
+    <string name="send_money_amount">Monto</string>
+    <string name="send_money_contact">Beneficiario</string>
+    <string name="send_money_reference">Referencia</string>
+    <string name="send_money_tracking_code">Clave de rastreo</string>
+    <string name="send_money_add_to_favorites">Añadir cuenta a favoritos</string>
+    <string name="receive_money">Recibir dinero</string>
+    <string name="receive_money_spei">SPEI</string>
+    <string name="receive_money_branch">Sucursal</string>
+
+    <!-- Receive money -->
+    <string name="receive_money_easy_window">Ventanilla Fácil</string>
+    <string name="credit_payment_toolbar_title">Paga tu crédito ASP</string>
+    <string name="credit_payment_my_credits">Mis créditos</string>
+    <string name="credit_payment_control_label">Control</string>
+
+    <!-- Credit Payment -->
+    <string name="credit_payment_clabe_label">Cuenta clabe</string>
+    <string name="credit_payment_amount">Ingresa el monto a pagar, en pesos</string>
+    <string name="payment_services_toolbar_title">Paga tus servicios</string>
+    <string name="confirm">Confirmar</string>
+    <string name="accept">Aceptar</string>
+
+    <!-- Payment services -->
+    <string name="share">Compartir</string>
+
+    <!--CODI -->
+    <string name="code_codi_confirm_toolbar">Registro en CoDi</string>
+    <string name="code_codi_tittle">Te hemos enviado un código de validación vía SMS para tu registro en CoDi</string>
+    <string name="code_codi_subtitle">Ingresa tus 6 dígitos</string>
+    <string name="code_codi_confirm_alert">La cuenta se verifico correctamente</string>
+    <string name="code_codi_error_alert">Tu código de validación es incorrecto, intenta nuevamente</string>
+    <string name="code_codi_qr_cobrar">Soportado por CoDi ®</string>
+
+    <!-- COMMON -->
+    <string name="my_favorite_services">Mis frecuentes</string>
+    <string name="more_services">Más servicios</string>
+    <string name="continue_flow">Continuar</string>
+    <string name="payment_services_title_info">Ingresa o escanea la información</string>
+    <string name="save_data_favorite">Guardar como dato frecuente</string>
+    <string name="payment_service_title">¿Dónde encuentro la referencia?</string>
+    <string name="payment_service_title_important">Importante:</string>
+    <string name="payment_service_cfe_reference_description">Los 30 números de la referencia están en la esquina inferior izquierda de tu recibo o escanea el código de barras.</string>
+    <string name="payment_service_total_play_reference_description">Los 17 números de la referencia están en la esquina superior derecha de tu recibo o escanea el código de barras.</string>
+    <string name="payment_service_sky_reference_description">Los 12 números de la cuenta están en la esquina superior derecha de tu recibo.</string>
+    <string name="payment_service_telmex_reference_description">Los 20 números de la referencia están en la esquina inferior izquierda de tu recibo o escanea el código de barras.</string>
+    <string-array name="on_boarding_titles">
+        <item>BIENVENIDO</item>
+        <item>AHORRA</item>
+        <item>TRANSFIERE</item>
+        <item>PAGA</item>
+        <item>COMPRA</item>
+        <item>CoDi</item>
+    </string-array>
+    <string-array name="onboarding_user_form_titles">
+        <item>Calle</item>
+        <item>Número exterior</item>
+        <item>Número interior</item>
+    </string-array>
+    <string-array name="on_boarding_texts">
+        <item>La App que tu dinero\nnecesita\n</item>
+        <item>Crea una cuenta rápido,\nfácil y seguro\n</item>
+        <item>Envía y recibe dinero desde\ndonde estés\n</item>
+        <item>Paga tus servicios,\nentretenimiento, compra tiempo\naire y más</item>
+        <item>Obtén tu tarjeta y haz compras\nseguras por internet o en\nestablecimientos</item>
+        <item>Cobra y paga con código QR\nsin comisión\n</item>
+    </string-array>
+
+    <string name="form_beneficiary_title_text">Términos y\ncondiciones del contrato</string>
+    <string name="form_beneficiary_subtitle_text">Aceptar términos y condiciones del contrato</string>
+    <string name="form_beneficiary_button_text">Aceptar</string>
+    <string name="contract_url_text_link">https://aspintegraopciones.com/fr/regulacion/contrato.html</string>
+    <string name="amount">$%1$s</string>
+    <string name="title_congratulations_activation_card_message">¡Felicidades!</string>
+    <string name="subtitle_card_activation_message_text">La solicitud de tu tarjeta fue exitosa. La solicitud de tu tarjeta se realizó con éxito. En los próximos días la recibirás en el domicilio seleccionado y podrás activarla en ASP Pago.</string>
+    <string name="not_activated_card_yet_message_text">Aún no activas tu tarjeta</string>
+    <string name="activate_message_button_text">Activar</string>
+    <string name="virtual_card_text">Tarjeta virtual</string>
+    <string name="physic_card_text">Tarjeta fisica</string>
+    <string name="mask_card_not_activated">XXXX XXXX</string>
+    <string name="virtual_card_not_activated_yet_message">Aún no activas tu tarjeta virtual</string>
+    <string name="physic_card_not_activated_yet_text">Aún no cuentas con tu tarjeta física</string>
+    <string name="request_text_message_option">Solicitar</string>
+    <string name="virtual_card_text_title">Tarjeta virtual</string>
+    <string name="information_dialog_text">Información</string>
+    <string name="request_physic_card_text_title">Solicitar tu tarjeta física</string>
+    <string name="codi_description">Con CoDi ® puedes realizar pagos y cobros desde tu celular. Se realizan de forma sencilla,segura,rápida,sin comisiones y disponibles en cualquier momento.</string>
+    <string name="channel_name">Notificaciones CoDi</string>
+    <string name="channel_desc">Configuración de las notificaciones CoDi</string>
+    <string name="channel_id" tools:ignore="Typos">codi_v1</string>
+    <!-- Cellphone refills -->
+    <string name="cellphone_refills">Recarga de servicios</string>
+    <string name="cellphone_refills_company">Selecciona Compañía</string>
+    <string name="cellphone_refills_number">Ingresa y verifica  la información</string>
+    <string name="beneficiary_text_2_title">Captura los datos del\nbeneficiario</string>
+    <string name="beneficiary_name_hint_text">Nombre(s)*</string>
+    <string name="beneficiary_lastname_hint_text">Primer Apellido*</string>
+    <string name="beneficiary_surname_text">Segundo Apellido*</string>
+    <string name="beneficiary_simil_hint_text">Parentesco*</string>
+    <string name="update_pin">Actualizar número de seguridad personal</string>
+    <string name="activate_biometric">Usar huella o rostro para iniciar sesión y autorizar operaciones en tu app</string>
+    <string name="favorite_codi_account">Activar ASP como favorita para operaciones CoDi</string>
+    <string name="close_session">Cerrar sesión</string>
+    <string name="update_personal_pin_title">Ingresa tu nuevo código de seguridad personal</string>
+    <string name="validate_personal_pin_title">Confirma tu nuevo código de seguridad personal</string>
+    <string name="reject">Rechazar</string>
+    <string name="movements_resume_title">Resumen de movimientos</string>
+    <string name="my_movements_text_subtitle">Resumen de movimientos</string>
+    <string name="ine_message">1.- Coloca el lado de tu INE/IFE que deseas fotografiar\n\n2.- Enfoca la cámara para que la imagen solo tome el recuadro de la identificación.\n\nSe debe tomar sin hacer movimientos bruscos para garantizar que la imagen y los textos de la misma no se vean <b>\'movidos\'. NO GIRES LA CÁMARA.</b>\n\n3.- La iluminación debe ser uniforme, es decir, no debe presentar zonas de mucha luz y zonas   de mucha sombra. Evite que existan reflejos de luz.</string>
+    <string name="register_info_hello_string_template">¡Hola!</string>
+    <string name="register_info_hint_pass_input">Ingresa tu contraseña</string>
+    <string name="register_info_forgot_password_text_hint">Olvidé mi contraseña</string>
+    <string name="register_info_button_accept">Ingresar</string>
+    <string name="register_info_login_biometrics_button_text">Ingresar con huella \no rostro</string>
+    <string name="success_pin_step_1_text">Acude a uno de los siguientes cajeros ATM autorizados: Banamex, Santander, Banorte, Scotiabank, Banregio o Multiva.</string>
+    <string name="success_pin_step_2">"Inserta tu tarjeta y captura tu nuevo nip. "</string>
+    <string name="success_pin_step_3">Realiza una consulta de saldo (esta consulta tiene una comisión impuesta por el banco del cajero).</string>
+    <string name="success_pin_step_4">Una vez realizado lo anterior, tu tarjeta está lista para comprar en comercios.</string>
+    <string name="pin_success_toolbar_title">Asignación de NIP</string>
+    <string name="pin_assignation_toolbar_title">Asignacion de nuevo NIP</string>
+    <string name="pin_assignation_new_nip_button_text">Ingresa nuevo NIP</string>
+    <string name="pin_assignation_confirm_nip_button_text">Confirma nuevo NIP</string>
+    <string name="success_pin_title_text">Cambio exitoso</string>
+    <string name="success_pin_subtitle_text">Tu nip ha sido asignado exitosamente</string>
+    <string name="success_pin_description_text">Para completar el proceso necesitas seguir las siguientes instrucciones:</string>
+    <string name="success_pin_continue_button">Continuar</string>
+    <string name="app_center_id">0bebf707-e666-46bc-8ca0-edecb3004d61</string>
+    <string name="firebase_table_versionApp">versionAppAndroid</string>
+    <string name="firebase_aes_key">AESKEYINICIAL</string>
+    <string name="initial_data_error_message">Hubo un problema a la hora de obtener los datos iniciales.</string>
+    <string name="dialog_title_reposition">Reposición de tarjeta virtual</string>
+    <string name="dialog_reposition_message_description">"Tu tarjeta dejará de funcionar y se te asignará una nueva. \n ¿Estás seguro que deseas continuar?"</string>
+    <string name="dialog_close_text">cerrar</string>
+    <string name="card_unlock_text">Tarjeta desbloqueada</string>
+    <string name="card_lock_text">Tarjeta bloqueada</string>
+    <string name="request_reposition_success">Solicitud de reposición exitosa</string>
+    <string name="request_reposition_success_text_description">La reposición de tu tarjeta se realizó con éxito. Comienza a usar tu nueva tarjeta, ya que la anterior ha sido cancelada.\n.</string>
+    <string name="see_CVV_text">Ver CVV</string>
+    <string name="unlock_card_title_dialog">Desbloqueo de tarjeta</string>
+    <string name="unlock_card_text_dialog">Estás desbloqueando tu tarjeta, ya podrás realizar operaciones.</string>
+    <string name="lock_card_title_dialog">Bloqueo de tarjeta</string>
+    <string name="lock_card_text_description_dialog">Estás bloqueando tu tarjeta, ya no podrás realizar operaciones.</string>
+    <string name="unlock_card_split_text">Desbloquear\ntarjeta</string>
+    <string name="lock_card_split_text">Bloquear\ntarjeta</string>
+    <string name="card_virtual_type_enum">V</string>
+    <string name="version_app_text_info">Versión %1$s</string>
+    <string name="select_service">Selecciona el servicio</string>
+    <string name="information_ocr_text_dialog">El documento ingresado no es válido, intente nuevamente.</string>
+    <string name="asp_picture">asp_picture</string>
+    <string name="from_the_camera_text">From the Camera</string>
+    <string name="date_format_text">yyyyMMdd_HHmmss</string>
+    <string name="call_center_text">call_center@aspintegraopciones.com\n664 204 1866</string>
+    <string name="beneficiary_text_2_subtitle">La persona que registres como beneficiario tendrá acceso a los fondos de la cuenta, en caso de fallecimiento.</string>
+    <string name="onboarding_form_subtitle_toolbar_text_pass_creation">Diseña tu contraseña personalizada respetando las reglas que se muestran debajo del cuadro de texto.</string>
+    <string name="onboarding_form_subtitle_toolbar_text_pin_creation">Este código de seguridad te permitirá autorizar cualquier operación que represente un cargo a tu cuenta.</string>
+    <string name="firebase_usuario">usuario</string>
+    <string name="firebase_pass">pass</string>
+    <string name="firebase_baseurl">baseURL</string>
+    <string name="app_invalid_version_message_text">Version de la app no valida.</string>
+    <string name="dialog_initial_data_message_error_text">Ha ocurrido un error al obtener los datos iniciales.</string>
+    <string name="ine_info_title_text">Sigue los siguientes pasos a continuación para tomar la foto correctamente de tu INE/IFE:</string>
+    <string name="ine_info_important_text">Importante:</string>
+    <string name="geolocalization_data_not_reached_message">No podemos obtener los datos de geolocalización del dispositivo.</string>
+    <string name="ine_load_error_message">Problema al cargar INE</string>
+
+    <string name="dialog_error_initial_data_title">Error al iniciar ASP Pago</string>
+    <string name="dialog_error_initial_data_message">Por el momento nuestro servicio no está disponible, por favor inténtalo más tarde.</string>
+    <string name="action_retry">reintentar</string>
+
+    <string name="dialog_error_message_retry">Ocurrió un error, intente de nuevo en unos momentos</string>
+
+    <string name="dialog_gps_error">Active la ubicación para completar la transacción</string>
+
+    <string name="dialog_camera_permission">Debe otorgar acceso a la cámara para usar CoDi</string>
+    <string name="services_payment_label">*No se admiten pagos de recibos vencidos</string>
+    <string name="refills_note">*Las recargas están limitadas a la aceptación de cada compañía, según el tipo de plan contratado.</string>
+</resources>

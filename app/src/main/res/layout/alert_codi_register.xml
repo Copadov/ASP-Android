@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource"
+    android:id="@+id/alertDialogCodi"
+    android:background="@drawable/ic_rectangle_with_stroke"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/iconAlertCodi"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/asp_alert_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.108" />
+
+            <TextView
+                android:id="@+id/doPaymentTxtCodi"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="CoDi"
+                android:textColor="@color/asp_icon_button_text_color"
+                android:textSize="18dp"
+                app:flow_horizontalAlign="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconAlertCodi"
+                app:layout_constraintVertical_bias="0.064" />
+
+            <TextView
+                android:id="@+id/descriptionTxtCodi"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:textSize="12dp"
+                android:gravity="fill_horizontal"
+                android:textAlignment="center"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/asp_icon_button_text_color"
+                android:text="@string/codi_description"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/doPaymentTxtCodi"
+                app:layout_constraintVertical_bias="0.132"
+                tools:ignore="RtlCompat" />
+
+            <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+                android:id="@+id/doPaymentBtnCodi"
+                style="@style/ColoredButtonV2"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="@dimen/dp_80"
+                android:allowClickWhenDisabled="true"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Registarme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionTxtCodi"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelPaymentBtnCodi"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:allowClickWhenDisabled="true"
+                android:backgroundTint="@color/asp_flat_button_line_color"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Cerrar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/doPaymentBtnCodi"
+                app:layout_constraintVertical_bias="0.362" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

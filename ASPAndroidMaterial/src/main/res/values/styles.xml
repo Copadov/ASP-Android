@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--************************** ASP Button Styles ***************************-->
+
+    <!--************************** Styles for buttons **************************-->
+    <!--Card for Action Button Round-->
+    <style name="cardActionButtonRound" parent="Base.CardView">
+        <item name="android:elevation">@dimen/action_button_round_elevation</item>
+    </style>
+
+    <!--Label for Action Button Round-->
+    <style name="labelActionButtonRound" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/colorPrimaryDarkVariant1Material</item>
+        <item name="android:lines">2</item>
+        <item name="android:gravity">top|center</item>
+    </style>
+
+    <!--Label for Action Button Rectangle-->
+    <style name="labelActionButtonRectangle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/colorPrimaryDarkMaterial</item>
+        <item name="android:lines">2</item>
+        <item name="android:gravity">top|center</item>
+    </style>
+
+    <!--ContainedCompatButton-->
+    <style name="ContainedCompatButton">
+        <item name="android:background">@color/colorPrimaryDarkMaterial</item>
+        <item name="android:textColor">@color/colorPrimaryLightMaterial</item>
+        <item name="android:textAppearance">@style/labelHMediumMaterial</item>
+    </style>
+
+    <!--OutlinedButton-->
+    <style name="outlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/colorPrimaryDarkMaterial</item>
+        <item name="android:textAppearance">@style/labelHMediumMaterial</item>
+        <item name="strokeColor">@color/colorPrimaryDarkMaterial30</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <!--OutlinedButton-->
+    <style name="outlinedButtonReturn" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/colorPrimaryDarkMaterial</item>
+        <item name="android:textAppearance">@style/labelMhMediumMaterial</item>
+        <item name="strokeColor">@color/colorPrimaryDarkMaterial30</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <!--************************** Styles for badges **************************-->
+    <!--Label for Badge Counter-->
+    <style name="labelBadgeCounter" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_8</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/colorPrimaryLightMaterial</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:paddingStart">2dp</item>
+    </style>
+
+    <!--************************** Styles for BottomSheets **************************-->
+    <style name="bottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/bottomSheet</item>
+    </style>
+
+    <style name="bottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/shapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="shapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dp_12</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_12</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="DialogAnimationSlide">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <!--************************** Styles for Labels **************************-->
+    <!--************************** The default font is Roboto **************************-->
+    <!--Roboto label styles-->
+    <style name="labelTitleMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="labelSubtitleMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="labelMRegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="labelMBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="labelMBoldRegular" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="labelHRegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="label10MediumMaterialLight" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/colorPrimaryLightMaterial</item>
+    </style>
+
+    <style name="labelMMediumMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="labelMhMediumMaterialLight" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/colorPrimaryLightMaterial</item>
+    </style>
+
+    <style name="labelHBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="labelXMediumMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="labelXhRegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="labelXhMediumMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="labelXXXhMediumMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="labelXXXhBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="labelMhMediumMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="labelMhRegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="labelMHBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="labelHMediumMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="labelXhBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="labelXXhRegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="labelXXhBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="label12RegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="label14RegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="label16RegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="label12BoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="label12BoldMaterialGray" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/gray_979797</item>
+    </style>
+
+    <style name="label12MediumMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="label14BoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="label16BoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!--Noka label styles-->
+    <style name="labelTitleNokaSemibold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="label22NokaSemibold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="label24NokaSemibold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="labelSMediumMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="labelSRegularMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="labelHNokaSemiBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="labelHNokaBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/noka_bold</item>
+    </style>
+
+    <style name="labelXhNokaSemiBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="label32NokaSemiBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_32</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="label32RobotoSemiBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_32</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="LabelWhiteLight" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/colorPrimaryLightMaterial</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SubItemContentRegularBlack" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/colorClassicDarkVariant4Material</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ContentNormalBlack" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/colorPrimaryDarkMaterial</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="SubTitleDark" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/colorPrimaryDarkVariant8Material</item>
+    </style>
+
+    <style name="TitleBoldGray" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/colorClassicDarkVariant5Material</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="label14NokaSemiBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="label16NokaSemiBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="label18NokaSemiBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="labelXXhNokaSemiBoldMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="label24NokaBold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:fontFamily">@font/noka_bold</item>
+    </style>
+
+    <style name="RadioButton1" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimaryLightMaterial</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryLightMaterial</item>
+        <item name="colorControlNormal">@color/colorPrimaryLightMaterial</item>
+    </style>
+
+    <style name="RegularCard">
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardMaxElevation">10dp</item>
+        <item name="contentPadding">12dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ItemCardView" parent="RegularCard">
+        <item name="android:background">@color/colorPrimaryLightMaterial</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="SmallCard">
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardMaxElevation">10dp</item>
+        <item name="contentPadding">8dp</item>
+    </style>
+
+    <style name="SmallCardButton" parent="SmallCard">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="CardButton" parent="RegularCard">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="TitleMediumDark">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/dp_20</item>
+        <item name="android:textColor">@color/black_343739</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="labelXlBold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="NoActionBarTranslucent">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@color/colorPrimaryLightMaterial</item>
+    </style>
+
+    <style name="DialogAnimationFade">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="label20NokaNormalMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+    </style>
+
+    <style name="label18NokaNormalMaterial" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:fontFamily">@font/noka_black</item>
+    </style>
+
+    <style name="ToolbarHomeTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="ColoredButtonV2">
+        <item name="android:textColor">@color/asp_icon_button_text_color_style_v2</item>
+    </style>
+
+    <!-- Parent -->
+    <style name="UbuntuW500OrMedium" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/ubuntu_medium</item>
+    </style>
+
+    <style name="UbuntuRegularOrW400" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/ubuntu_regular</item>
+    </style>
+
+    <style name="UbuntuBoldOrW700" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+    </style>
+
+    <!-- By color -->
+
+    <style name="UbuntuW500OrMedium.White" parent="UbuntuW500OrMedium">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="UbuntuRegularOrW400.White" parent="UbuntuRegularOrW400">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="UbuntuBoldOrW700.White" parent="UbuntuBoldOrW700">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="UbuntuW500OrMedium.Blue" parent="UbuntuW500OrMedium">
+        <item name="android:textColor">@color/color_242142</item>
+    </style>
+
+    <style name="UbuntuRegularOrW400.Blue" parent="UbuntuRegularOrW400">
+        <item name="android:textColor">@color/color_242142</item>
+    </style>
+
+    <style name="UbuntuBoldOrW700.Blue" parent="UbuntuBoldOrW700">
+        <item name="android:textColor">@color/color_242142</item>
+    </style>
+
+    <style name="UbuntuW500OrMedium.Grey" parent="UbuntuW500OrMedium">
+        <item name="android:textColor">@color/color_818084</item>
+    </style>
+
+    <style name="UbuntuRegularOrW400.Grey" parent="UbuntuRegularOrW400">
+        <item name="android:textColor">@color/color_818084</item>
+    </style>
+
+    <style name="UbuntuBoldOrW700.Grey" parent="UbuntuBoldOrW700">
+        <item name="android:textColor">@color/color_818084</item>
+    </style>
+
+    <style name="UbuntuW500OrMedium.C333333" parent="UbuntuW500OrMedium">
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="UbuntuRegularOrW400.C333333" parent="UbuntuRegularOrW400">
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="UbuntuBoldOrW700.C333333" parent="UbuntuBoldOrW700">
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="UbuntuW500OrMedium.C7993BE" parent="UbuntuW500OrMedium">
+        <item name="android:textColor">@color/color_7993BE</item>
+    </style>
+
+    <style name="UbuntuRegularOrW400.C7993BE" parent="UbuntuRegularOrW400">
+        <item name="android:textColor">@color/color_7993BE</item>
+    </style>
+
+    <style name="UbuntuBoldOrW700.C7993BE" parent="UbuntuBoldOrW700">
+        <item name="android:textColor">@color/color_7993BE</item>
+    </style>
+
+    <style name="UbuntuW500OrMedium.C00306A" parent="UbuntuW500OrMedium">
+        <item name="android:textColor">@color/color_00306A</item>
+    </style>
+
+    <style name="UbuntuRegularOrW400.C00306A" parent="UbuntuRegularOrW400">
+        <item name="android:textColor">@color/color_00306A</item>
+    </style>
+
+    <style name="UbuntuBoldOrW700.C00306A" parent="UbuntuBoldOrW700">
+        <item name="android:textColor">@color/color_00306A</item>
+    </style>
+
+    <style name="UbuntuW500OrMedium.C3C3C3B" parent="UbuntuW500OrMedium">
+        <item name="android:textColor">@color/color_3C3C3B</item>
+    </style>
+
+    <style name="UbuntuRegularOrW400.C3C3C3B" parent="UbuntuRegularOrW400">
+        <item name="android:textColor">@color/color_3C3C3B</item>
+    </style>
+
+    <style name="UbuntuBoldOrW700.C3C3C3B" parent="UbuntuBoldOrW700">
+        <item name="android:textColor">@color/color_3C3C3B</item>
+    </style>
+
+
+    <!-- By size -->
+
+    <style name="Ubuntu.w700.color_242142.s16" parent="UbuntuBoldOrW700.Blue">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="Ubuntu.w700.color_242142.s20" parent="UbuntuBoldOrW700.Blue">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="Ubuntu.w700.color_242142.s24" parent="UbuntuBoldOrW700.Blue">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_242142.s14" parent="UbuntuW500OrMedium.Blue">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_242142.s16" parent="UbuntuW500OrMedium.Blue">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_242142.s12" parent="UbuntuW500OrMedium.Blue">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_242142.s20" parent="UbuntuW500OrMedium.Blue">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="Ubuntu.w400.color_818084.s16" parent="UbuntuRegularOrW400.Grey">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="Ubuntu.w400.color_818084.s12" parent="UbuntuRegularOrW400.Grey">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="Ubuntu.w700.color_white.s20" parent="UbuntuW500OrMedium.White">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:fontWeight">700</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_white.s24" parent="UbuntuW500OrMedium.White">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:fontWeight">500</item>
+    </style>
+
+    <style name="Ubuntu.w400.color_333333.s12" parent="UbuntuRegularOrW400.C333333">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_333333.s12" parent="UbuntuW500OrMedium.C333333">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_7993BE.s16" parent="UbuntuW500OrMedium.C7993BE">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_7993BE.s20" parent="UbuntuW500OrMedium.C7993BE">
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="Ubuntu.w500.color_7993BE.s14" parent="UbuntuW500OrMedium.C7993BE">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="Ubuntu.w400.color_242142.s16" parent="UbuntuW500OrMedium.Blue">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="UbuntuMediumC00306A.w400.s10" parent="UbuntuRegularOrW400.C00306A">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="UbuntuBoldC3C3C3B.w700.s10" parent="UbuntuBoldOrW700.C3C3C3B">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="UbuntuMediumC3C3C3B.w700.s10" parent="UbuntuBoldOrW700.C3C3C3B">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="UbuntuMediumC3C3C3B.w400.s10" parent="UbuntuRegularOrW400.C3C3C3B">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+</resources>

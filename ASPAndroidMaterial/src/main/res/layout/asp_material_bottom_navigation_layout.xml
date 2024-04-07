@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="bottom">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/menu_bottom_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/option1"
+        layout="@layout/bottom_option_item_layout"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <include
+        android:id="@+id/option2"
+        layout="@layout/bottom_option_item_layout"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aspHomeIcon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option1"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <include
+        android:id="@+id/option3"
+        layout="@layout/bottom_option_item_layout"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/aspHomeIcon"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <include
+        android:id="@+id/option4"
+        layout="@layout/bottom_option_item_layout"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option3"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutCompat2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/aspHomeIcon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/icon_square_box"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            app:srcCompat="@drawable/asp_banderas_menu_icon" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

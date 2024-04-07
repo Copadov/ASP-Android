@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ColoredButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/asp_icon_button_text_color_style</item>
+    </style>
+
+    <style name="ColoredButtonV2">
+        <item name="android:textColor">@color/asp_icon_button_text_color_style_v2</item>
+    </style>
+
+    <style name="ColoredButtonV3">
+        <item name="android:textColor">@color/asp_icon_button_text_color_style_v3</item>
+    </style>
+
+    <style name="ColoredButtonV4">
+        <item name="android:textColor">@color/asp_icon_button_text_color_style_v4</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextColor">@color/tab_text_color</item>
+        <item name="tabSelectedTextColor">@color/tab_selected_text_color</item>
+        <item name="tabIndicatorColor">@color/tab_indicator_color</item>
+        <item name="tabBackground">@color/tab_background_color</item>
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <!-- Define el estilo para el texto de la tab -->
+    <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item> <!-- Desactiva la conversión a mayúsculas -->
+    </style>
+
+    <style name="UbuntuBold" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="UbuntuBoldWhite" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="UbuntuBoldBlue" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/asp_spinner_button_text_color</item>
+    </style>
+
+    <style name="UbuntuBoldGrey" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textColor">#3C3C3B</item>
+    </style>
+
+    <style name="UbuntuBold.12.Black" parent="UbuntuBold">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="UbuntuBold.16.Black" parent="UbuntuBold">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="UbuntuBoldWhite.16" parent="UbuntuBoldWhite">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="UbuntuBold.24.Black" parent="UbuntuBold">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="UbuntuBold.12.Blue" parent="UbuntuBoldBlue">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="UbuntuBold.10.Grey" parent="UbuntuBoldGrey">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+</resources>

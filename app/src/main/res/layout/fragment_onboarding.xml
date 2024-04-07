@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/black"
+    tools:context=".ui.fragments.onboarding.OnboardingFragment">
+
+
+    <ImageView
+        android:id="@+id/imageOnboarding"
+        android:layout_width="315dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/onb_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/splash_icon"
+        app:layout_constraintBottom_toTopOf="@+id/onboardingTextTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageOnboarding"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/onboardingTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="BIENVENIDO A \n
+ASP PAGO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIcon" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboardingTextTitle"
+        tools:text="La App que tu dinero necesita" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

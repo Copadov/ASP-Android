@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.codi.CodiDevPayFragment"
+    android:id="@+id/layoutCodiDevPay">
+    <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+        android:id="@+id/accountDetailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="84dp"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutDev"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="340dp"
+            android:background="@drawable/option_menu_dashboard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Beneficiario"
+                android:textColor="@color/text_1"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.468"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058" />
+
+            <TextView
+                android:id="@+id/detailNameScan"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Juan Perez"
+                android:textColor="@color/asp_edittext_text_color"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/separator_beneficiario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailNameScan"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/separator_line_icon" />
+
+
+            <TextView
+                android:id="@+id/detailAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingBottom="4dp"
+                android:text="Monto"
+                android:textColor="@color/text_1"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator_beneficiario"
+                app:layout_constraintVertical_bias="0.034" />
+
+            <asp.android.aspandroidmaterial.ui.inputs.ASPMaterialEditText
+                android:id="@+id/editDetailAmount"
+                android:layout_width="200dp"
+                android:layout_height="26.5dp"
+                android:inputType="number|numberDecimal"
+                android:maxLength="10"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@id/separator_amount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator_beneficiario"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/amountNumberValue"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="$0.0"
+                android:textColor="@color/asp_edittext_text_color"
+                android:textSize="14dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailAmount"
+                app:layout_constraintVertical_bias="0.04" />
+
+            <ImageView
+                android:id="@+id/separator_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="12dp"
+                android:paddingTop="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/amountNumberValue"
+                app:layout_constraintVertical_bias="0.083"
+                app:srcCompat="@drawable/separator_line_icon" />
+
+            <TextView
+                android:id="@+id/conceptDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Concepto"
+                android:textColor="@color/text_1"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator_amount"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/conceptValue"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="cambio"
+                android:textColor="@color/asp_edittext_text_color"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conceptDetail"
+                app:layout_constraintVertical_bias="0.104" />
+
+            <ImageView
+                android:id="@+id/separator_concept"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conceptValue"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/separator_line_icon" />
+
+
+            <TextView
+                android:id="@+id/referencesDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Referencia"
+                android:textColor="@color/text_1"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator_concept"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/referencesValue"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="12345678"
+                android:textColor="@color/asp_edittext_text_color"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/referencesDetail"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+            android:id="@+id/cancelDevBtn"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="96dp"
+            android:allowClickWhenDisabled="false"
+            android:backgroundTint="@color/asp_flat_button_line_color"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Rechazar"
+            app:layout_constraintEnd_toStartOf="@+id/confirmarBtnDetailPagar"
+            app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutDev" />
+
+        <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+            android:id="@+id/confirmarBtnDetailPagar"
+            style="@style/ColoredButtonV2"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="84dp"
+            android:allowClickWhenDisabled="false"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Enviar pago"
+            app:layout_constraintBaseline_toBaselineOf="@+id/cancelDevBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutDev"
+            app:layout_constraintVertical_bias="0.353" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- text size -->
+    <dimen name="title_text_size_small">20sp</dimen>
+    <dimen name="title_text_size_medium">24sp</dimen>
+    <dimen name="title_text_size_large">32sp</dimen>
+    <dimen name="subtitle_text_size">16sp</dimen>
+    <dimen name="body_text_size">16sp</dimen>
+    <dimen name="body_text_size_small">14sp</dimen>
+    <dimen name="overline_text_size">16sp</dimen>
+    <dimen name="caption_text_size">12sp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <!-- text line height -->
+    <dimen name="title_text_size_small_line_height">24sp</dimen>
+    <dimen name="title_text_size_medium_line_height">28.8sp</dimen>
+    <dimen name="title_text_size_large_line_height">38.4sp</dimen>
+    <dimen name="subtitle_text_size_line_height">19.2sp</dimen>
+    <dimen name="body_text_size_line_height">22.4sp</dimen>
+    <dimen name="body_text_size_small_line_height">19.6sp</dimen>
+    <dimen name="overline_size_text_line_height">22.4sp</dimen>
+    <dimen name="caption_text_size_line_height">16.8sp</dimen>
+    <dimen name="button_text_size_line_height">22.4sp</dimen>
+
+    <dimen name="letter_spacing_0">0.0</dimen>
+    <dimen name="letter_spacing_0_3">0.01875</dimen>
+</resources>

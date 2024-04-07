@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginVertical="@dimen/dp_8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c_number"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_circle_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/circle_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_step_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/iv_circle_background"
+            app:layout_constraintBottom_toBottomOf="@id/iv_circle_background"
+            app:layout_constraintStart_toStartOf="@id/iv_circle_background"
+            app:layout_constraintEnd_toEndOf="@id/iv_circle_background"
+            tools:text="1"
+            android:textAppearance="@style/Ubuntu.w500.color_7993BE.s20"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_step_label"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/c_number"
+        app:layout_constraintBottom_toBottomOf="@id/c_number"
+        app:layout_constraintStart_toEndOf="@id/c_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/dp_8"
+        android:textAppearance="@style/Ubuntu.w500.color_333333.s12"
+        tools:text="Acude a tu sucursal ASP más cercana."/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.codi.PagarCodiFragment">
+
+    <!-- body -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+            android:id="@+id/accountDetailToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/toolbar_top_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/pagarCodiLayout"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/textMonto"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:maxLines="2"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="125dp"
+                android:breakStrategy="high_quality"
+                android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+                android:text="Selecciona la opción que prefieras para realizar tu pago:" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/scanLayout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/option_menu_dashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pagarCodiLayout">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/scanCircleId"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/circle_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/asp_scan_qr_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView
+                android:id="@+id/scanText"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:textAppearance="@style/Ubuntu.w500.color_242142.s16"
+                android:text="Escanear tu QR"
+                app:layout_constraintStart_toEndOf="@+id/scanCircleId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+            <ImageView
+                android:id="@+id/goScan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:src="@drawable/chevron_left_card_detail"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/galleryLayout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/option_menu_dashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scanLayout">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/galleryCircleId"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/circle_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/asp_codi_gallery_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/galleryText"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:textAppearance="@style/Ubuntu.w500.color_242142.s16"
+                android:text="Selecciona el QR desde tu galería "
+                app:layout_constraintStart_toEndOf="@+id/galleryCircleId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <ImageView
+                android:id="@+id/goGallery"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:src="@drawable/chevron_left_card_detail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nfcLayout"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/option_menu_dashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/galleryLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nfcCircleId"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/circle_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/asp_codi_nfc_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/nfcText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textAppearance="@style/Ubuntu.w500.color_242142.s16"
+                android:text="NFC"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/nfcCircleId"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/nfcHelp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:src="@drawable/ic_info"
+                app:layout_constraintTop_toTopOf="@id/nfcText"
+                app:layout_constraintBottom_toBottomOf="@id/nfcText"
+                app:layout_constraintStart_toEndOf="@id/nfcText"/>
+
+            <ImageView
+                android:id="@+id/goNfc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/chevron_left_card_detail"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Bottom Sheet -->
+
+    <FrameLayout
+        android:id="@+id/bottom_sheet_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

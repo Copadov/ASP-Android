@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- toolbar -->
+    <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingHorizontal="@dimen/dp_16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Ubuntu.w700.color_242142.s20"
+            android:text="Ingresa el código que recibirás por SMS"
+            android:layout_marginTop="@dimen/dp_32"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.chaos.view.PinView
+                android:id="@+id/validatorPinSms"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_18"
+                android:cursorVisible="true"
+                android:inputType="numberPassword"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                app:cursorWidth="@dimen/dp_2"
+                app:hideLineWhenFilled="false"
+                app:itemCount="6"
+                app:itemHeight="60dp"
+                app:itemRadius="@dimen/dp_16"
+                app:itemSpacing="@dimen/dp_8"
+                app:itemWidth="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:lineColor="@color/pinlinecolor"
+                app:lineWidth="@dimen/dp_2"
+                app:viewType="rectangle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/text_view_resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No recibí el código, reenviar."
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_4"
+            android:textAppearance="@style/Ubuntu.w400.color_333333.s12"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:text="Continuar"
+        android:enabled="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

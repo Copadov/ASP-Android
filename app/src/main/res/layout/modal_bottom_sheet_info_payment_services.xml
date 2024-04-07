@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_bottom_background">
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/icon_round_line"
+        android:layout_marginTop="@dimen/dp_16"/>
+
+    <TextView
+        android:id="@+id/tv_reference_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/v_divider"
+        android:layout_marginTop="@dimen/dp_32"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        tools:text="CFE"
+        android:textAppearance="@style/Ubuntu.w700.color_242142.s16"/>
+
+    <ImageView
+        android:id="@+id/iv_reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_reference_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_40"
+        android:src="@drawable/ic_telmex_reference"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_reference"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:text="@string/payment_service_title"
+        android:textAppearance="@style/Ubuntu.w700.color_242142.s16"/>
+
+    <TextView
+        android:id="@+id/tv_important_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:text="@string/payment_service_title_important"
+        android:textAppearance="@style/UbuntuMediumC00306A.w400.s10"/>
+
+    <TextView
+        android:id="@+id/tv_important_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_important_title"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:text="Importante: Los 17 números de la referencia están en la esquina superior derecha de tu recibo o escanea el código de barras."
+        android:textAppearance="@style/UbuntuMediumC3C3C3B.w700.s10"/>
+
+    <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+        android:id="@+id/btn_continue"
+        style="@style/ColoredButtonV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_80"
+        android:text="@string/continue_flow"
+        android:layout_marginBottom="@dimen/dp_24"
+        app:layout_constraintTop_toBottomOf="@id/tv_important_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/dp_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

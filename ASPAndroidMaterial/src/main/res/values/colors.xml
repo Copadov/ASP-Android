@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Main palette color-->
+    <!--Primary color and his variants-->
+    <color name="colorPrimaryMaterial">#0a4080</color>
+    <color name="colorPrimaryVariant1Material">#4c9FFB</color>
+    <color name="colorPrimaryVariant2Material">#4d99FA</color>
+    <color name="colorPrimaryVariant3Material">#7fa7FF</color>
+    <color name="colorPrimaryVariant4Material">#4b84e1</color>
+    <color name="colorPrimaryVariant5Material">#4c84e0</color>
+    <color name="colorPrimaryVariant6Material">#4c9ffb</color>
+    <color name="colorPrimaryVariant7Material">#001a34</color>
+    <color name="colorPrimaryVariant8Material">#0063bf</color>
+    <color name="colorPrimaryVariant9Material">#0063c2</color>
+    <color name="colorPrimaryVariant10Material">#0061d0</color>
+    <color name="colorPrimaryVariant11Material">#0e4ef7</color>
+    <color name="colorPrimaryVariant12Material">#69B0FF</color>
+    <color name="colorPrimaryVariant13Material">#003EE0</color>
+
+    <!--ASPColorPallete-->
+    <color name="asp_linear_button_background_color">#FFFFFF</color>
+    <color name="asp_linear_button_line_color">#FFFFFF</color>
+    <color name="asp_linear_button_text_color">#FFFFFF</color>
+    <color name="asp_linear_button_ripple_color">#0060FF</color>
+
+    <color name="asp_flat_button_background_color">#E7323A</color>
+    <color name="asp_flat_button_line_color">#E7323A</color>
+    <color name="asp_flat_button_text_color">#FFFFFF</color>
+    <color name="asp_flat_button_ripple_color">#818084</color>
+
+    <color name="asp_icon_button_background_color">#FFFFFF</color>
+    <color name="asp_icon_button_line_color">#FFFFFF</color>
+    <color name="asp_icon_button_text_color">#00306A</color>
+    <color name="asp_icon_button_ripple_color">#6e6e6f</color>
+
+    <color name="asp_edittext_line_color">#00306A</color>
+    <color name="asp_edittext_text_color">#3C5478</color>
+    <color name="asp_edittext_hint_color">#818084</color>
+
+    <color name="asp_spinner_button_background_color">#FFFFFF</color>
+    <color name="asp_spinner_button_line_color">#7993BE</color>
+    <color name="asp_spinner_button_text_color">#00306A</color>
+    <color name="asp_spinner_button_ripple_color">#6e6e6f</color>
+
+    <!--Primary Dark color and his variants-->
+    <color name="colorPrimaryDarkMaterial">#000000</color>
+    <color name="colorPrimaryDarkMaterial60">#96000000</color>
+    <color name="colorPrimaryDarkMaterial50">#80000000</color>
+    <color name="colorPrimaryDarkMaterial30">#4D000000</color>
+    <color name="colorPrimaryDarkMaterial20">#32000000</color>
+    <color name="colorPrimaryDarkMaterial10">#1A000000</color>
+    <color name="colorPrimaryDarkMaterial40">#e6000000</color>
+    <color name="colorPrimaryDarkVariant1Material">#666666</color>
+    <color name="colorPrimaryDarkVariant2Material">#999999</color>
+    <color name="colorPrimaryDarkVariant3Material">#6e6e6f</color>
+    <color name="colorPrimaryDarkVariant4Material">#212121</color>
+    <color name="colorPrimaryDarkVariant5Material">#181818</color>
+    <color name="colorPrimaryDarkVariant7Material">#1d2534</color>
+    <color name="colorPrimaryDarkVariant8Material">#43484c</color>
+    <color name="colorPrimaryDarkVariant9Material">#1d1d1d</color>
+    <color name="colorPrimaryDarkVariant10Material">#c9c6c6</color>
+    <color name="colorPrimaryDarkVariant11Material">#E4E4E4</color>
+    <color name="colorPrimaryDarkVariant12Material">#c7c7c7</color>
+    <color name="colorPrimaryDarkVariant13Material">#898989</color>
+    <color name="colorPrimaryDarkVariant13Material51">#004c84e0</color>
+    <color name="colorPrimaryDarkVariant14Material">#0a0a0a</color>
+    <color name="colorPrimaryDarkVariant14Material25">#400a0a0a</color>
+    <color name="colorPrimaryDarkVariant15Material25">#898989</color>
+    <color name="colorPrimaryDarkVariant16Material">#f2f5f9</color>
+    <color name="colorPrimaryDarkVariant17Material">#9ca0a5</color>
+    <color name="colorPrimaryDarkVariant18Material">#d8d8d8</color>
+    <color name="colorPrimaryDarkVariant19Material">#e0e0e0</color>
+    <color name="colorPrimaryDarkVariant20Material">#9a9a9a</color>
+    <color name="colorPrimaryDarkVariant21Material">#e9e9e9</color>
+    <color name="colorPrimaryDarkVariant22Material">#E9EEF7</color>
+    <color name="colorPrimaryDarkVariant23Material">#f1f1f1</color>
+    <color name="colorPrimaryDarkVariant24Material">#f7f9fd</color>
+    <color name="colorPrimaryDarkVariant25Material">#c5c4c4</color>
+    <color name="colorPrimaryDarkVariant26Material">#f4f6fb</color>
+    <color name="colorPrimaryDarkVariant27Material">#1A1919</color>
+    <color name="colorPrimaryDarkVariant28Material">#101010</color>
+    <color name="colorPrimaryDarkVariant29Material">#C4C4C4</color>
+    <color name="colorPrimaryDarkVariant30Material">#66000000</color>
+    <color name="colorPrimaryDarkVariant31Material">#B7B4B4</color>
+
+    <!--Primary Light color and his variants-->
+    <color name="colorPrimaryLightMaterial">#ffffff</color>
+    <color name="colorPrimaryLightMaterial40">#64ffffff</color>
+    <color name="colorPrimaryLightMaterial80">#CCffffff</color>
+    <color name="colorPrimaryLightMaterial90">#E6FFFFFF</color>
+    <color name="colorPrimaryLightMaterial70">#B3ffffff</color>
+    <color name="colorPrimaryLightTransparentMaterial">#CBFFFFFF</color>
+
+    <!--Accent color and his variants-->
+    <color name="colorAccentMaterial">#583cc8</color>
+    <color name="colorAccentVariant1Material">#ffca2b</color>
+    <color name="colorAccentVariant2Material">#ff80a3</color>
+    <color name="colorAccentVariant3Material">#9880d1</color>
+    <color name="colorAccentVariant4Material">#00CC82</color>
+    <color name="colorAccentVariant5Material">#583cc8</color>
+    <color name="colorAccentVariant6Material">#ffe240</color>
+    <color name="colorAccentVariant7Material">#eaaf17</color>
+    <color name="colorAccentVariant8Material">#22da97</color>
+    <color name="colorAccentVariant9Material">#00cc82</color>
+    <color name="colorAccentVariant10Material">#66bb6a</color>
+    <color name="colorAccentVariant11Material">#d61b5a</color>
+    <color name="colorAccentVariant12Material">#ffc63f</color>
+    <color name="colorAccentVariant13Material">#dd2c2c</color>
+    <color name="colorAccentVariant14Material">#9880cf</color>
+    <color name="colorAccentVariant15Material">#80a6ff</color>
+    <color name="colorAccentVariant16Material">#6db8c2</color>
+    <color name="colorAccentVariant17Material">#3374db</color>
+    <color name="colorAccentVariant18Material">#ffad66</color>
+    <color name="colorAccentVariant19Material">#ff80a1</color>
+    <color name="colorAccentVariant20Material">#3374db</color>
+    <color name="colorAccentVariant21Material">#3374bd</color>
+    <color name="colorAccentVariant22Material">#ffd580</color>
+
+    <!--Classic colors-->
+    <!--Classic Primary Dark color and his variants-->
+    <color name="colorClassicDarkVariant1Material">#eaeaea</color>
+    <color name="colorClassicDarkVariant2Material">#343739</color>
+    <color name="colorClassicDarkVariant3Material">#2f2f2f</color>
+    <color name="colorClassicDarkVariant3Material87">#de000000</color>
+    <color name="colorClassicDarkVariant4Material">#151112</color>
+    <color name="colorClassicDarkVariant5Material">#aeaeb2</color>
+    <color name="colorClassicDarkVariant6Material">#d8000000</color>
+    <color name="colorClassicDarkVariant7Material">#e0dfe2</color>
+    <color name="colorClassicDarkVariant8Material">#40343739</color>
+    <color name="purple_7a41cb">#7a41cb</color>
+    <color name="purple_6753d4">#6753d4</color>
+    <color name="purple_5856d6">#5856d6</color>
+    <color name="gray_8e8e93">#8e8e93</color>
+    <color name="black_151112">#151112</color>
+    <color name="gray_1e000000">#1e000000</color>
+    <color name="black_d8000000">#d8000000</color>
+    <color name="gold_d0a232">#D0A232</color>
+    <color name="blue_46b8ac">#46b8ac</color>
+    <color name="gray_9b9b9b">#9b9b9b</color>
+    <color name="gray_979797">#979797</color>
+    <color name="red_e51010">#e51010</color>
+    <color name="gray_f3f2f5">#f3f2f5</color>
+    <color name="gray_eeeeee">#eeeeee</color>
+    <color name="gray_666666">#666666</color>
+    <color name="gray_FBFBFB">#FBFBFB</color>
+    <color name="black_343739">#343739</color>
+    <color name="red_d23a4b">#d23a4b</color>
+    <color name="blue_F3F6FC">#F3F6FC</color>
+
+    <color name="colorPrimaryGrayAuxMaterial">#e9eef7</color>
+
+    <color name="green_4dc240">#4dc240</color>
+    <color name="orange_ff9100">#ff9100</color>
+    <color name="red_eb433e">#eb433e</color>
+    <color name="purple_583cc8">#583cc8</color>
+    <color name="black_6b6b6b">#6b6b6b</color>
+    <color name="gray_c7ffffff">#c7ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_00cc82">#00cc82</color>
+    <color name="green_3EBB6B">#3EBB6B</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="blue_700">#3374DB</color>
+    <color name="blue_500">#3694fe</color>
+    <color name="blue_50">#e4f2ff</color>
+    <color name="black_800">#262626</color>
+    <color name="black_300">#c4c4c4</color>
+    <color name="black">#000000</color>
+    <color name="white_50">#FBFBFB</color>
+
+    <color name="gray_c7c7c7">#c7c7c7</color>
+    <color name="blue_4196f9">#4196f9</color>
+    <color name="blue_e9eef7">#E9EEF7</color>
+    <color name="blue_3374db">#3374db</color>
+
+    <color name="color_242142">#FF242142</color>
+    <color name="color_7993BE">#FF7993BE</color>
+    <color name="color_818084">#FF818084</color>
+    <color name="color_57638D">#FF57638D</color>
+    <color name="color_D9D9D9">#D9D9D9</color>
+    <color name="color_D9D9D9alpha70">#46D9D9D9</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_00306A">#00306A</color>
+    <color name="color_3C3C3B">#3C3C3B</color>
+
+    <color name="checkbox_default">#00306A</color>
+    <color name="checkbox_pressed">#00306A</color>
+    <color name="checkbox_selected">#00306A</color>
+    <color name="checkbox_disabled">#808080</color>
+
+</resources>

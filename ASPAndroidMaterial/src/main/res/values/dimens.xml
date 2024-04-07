@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- float values -->
+    <item name="float_value_0.5" format="float" type="dimen">0.5</item>
+
+    <!-- integer values -->
+    <item name="int_40" format="integer" type="dimen">40</item>
+    <item name="int_286" format="integer" type="dimen">286</item>
+
+    <!--Default margins-->
+    <dimen name="default_margin">16dp</dimen>
+    <!--Fonts dimensions-->
+    <dimen name="sp_6">6sp</dimen>
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_28">28sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+    <dimen name="sp_32">32sp</dimen>
+    <dimen name="sp_60">60sp</dimen>
+
+    <!--General margins-->
+    <!--Negative margins-->
+    <dimen name="dp_6_negative">-6dp</dimen>
+    <dimen name="dp_20_negative">-20dp</dimen>
+    <!--Positive margins-->
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_1.5">1.5dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_27">27dp</dimen>
+    <dimen name="dp_29">29dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_42">42dp</dimen>
+    <dimen name="dp_46">46dp</dimen>
+    <dimen name="dp_47">47dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+    <dimen name="dp_68">68dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_74">74dp</dimen>
+    <dimen name="dp_77">77dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_94">94dp</dimen>
+    <dimen name="dp_104">103dp</dimen>
+    <dimen name="dp_113">113dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_133">133dp</dimen>
+    <dimen name="dp_136">136dp</dimen>
+    <dimen name="dp_140">140dp</dimen>
+    <dimen name="dp_149">149dp</dimen>
+    <dimen name="dp_176">176dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_216">216dp</dimen>
+    <dimen name="dp_243">243dp</dimen>
+    <dimen name="dp_251">251dp</dimen>
+    <dimen name="dp_281">281dp</dimen>
+    <dimen name="dp_284">284dp</dimen>
+    <dimen name="dp_286">286dp</dimen>
+    <dimen name="dp_311">311dp</dimen>
+    <dimen name="dp_442">442dp</dimen>
+    <dimen name="dp_500">500dp</dimen>
+    <dimen name="dp_650">650dp</dimen>
+    <dimen name="dp_1600">1600dp</dimen>
+
+    <dimen name="small_margin">8dp</dimen>
+
+    <!--Header-->
+    <dimen name="header_back_height">24dp</dimen>
+    <dimen name="header_back_weight">24dp</dimen>
+
+    <!--OutlinedButton -->
+    <dimen name="outlined_button_top">16dp</dimen>
+    <dimen name="outlined_button_bottom">13dp</dimen>
+
+    <!--Action Button Round-->
+    <dimen name="action_button_round_elevation">12dp</dimen>
+    <dimen name="action_button_round_width_default">80dp</dimen>
+    <dimen name="action_button_round_height_default">80dp</dimen>
+    <dimen name="action_button_round_corner_radius_default">40dp</dimen>
+
+    <!--Action Button Rectangle-->
+    <dimen name="action_button_rectangle_elevation">@dimen/dp_12</dimen>
+    <dimen name="action_button_rectangle_width_default">@dimen/dp_94</dimen>
+    <dimen name="action_button_rectangle_height_default">@dimen/dp_77</dimen>
+
+    <!--Action Button Square-->
+    <dimen name="action_button_height">48dp</dimen>
+    <!-- stroke width -->
+    <dimen name="stroke_width_button">1.6dp</dimen>
+
+    <!--Badge-->
+    <dimen name="badge_width_default">@dimen/dp_46</dimen>
+    <dimen name="badge_height_default">@dimen/dp_24</dimen>
+
+    <!--Cards-->
+    <dimen name="card_elevation_medium">8dp</dimen>
+    <dimen name="card_elevation_low">5dp</dimen>
+
+    <!--Headers-->
+    <dimen name="header_extended_height">431dp</dimen>
+
+    <!--Item checker-->
+    <dimen name="item_checker_size">18dp</dimen>
+    <dimen name="view_pager_dot_checker_size">16dp</dimen>
+
+    <!--Layouts-->
+
+    <!--Maintenance service-->
+    <!--SelectPackage-->
+    <dimen name="package_car_width">128dp</dimen>
+    <dimen name="package_car_height">118dp</dimen>
+    <dimen name="package_car_margin_left">0dp</dimen>
+    <dimen name="package_car_card_elevation">8dp</dimen>
+    <dimen name="package_car_spinner_top_margin">24dp</dimen>
+    <dimen name="package_view_pager_top_margin">8dp</dimen>
+    <dimen name="package_items_list_top_margin">8dp</dimen>
+    <dimen name="package_items_padding_top_and_bottom">8dp</dimen>
+
+    <!--SelectWorkshop-->
+    <dimen name="maintenance_workshop_carousel_card_width">275dp</dimen>
+    <dimen name="maintenance_workshop_city_selector_padding_top">13dp</dimen>
+    <dimen name="maintenance_workshop_city_selector_padding_bottom">15dp</dimen>
+    <dimen name="maintenance_workshop_spinner_padding_top">11dp</dimen>
+    <dimen name="maintenance_workshop_carousel_card_padding_start_and_end">13dp</dimen>
+    <dimen name="maintenance_workshop_location_icon_size">18dp</dimen>
+
+    <!--SelectDateInCalendar-->
+    <dimen name="calendar_min_collapsed_height">86dp</dimen>
+
+    <!--AddCard-->
+    <dimen name="magnetic_band_height">29dp</dimen>
+    <dimen name="add_card_input_container_height">100dp</dimen>
+    <dimen name="add_card_margin_start">42dp</dimen>
+    <dimen name="add_card_margin_end">42dp</dimen>
+    <dimen name="expiration_month_margin_end">15dp</dimen>
+    <dimen name="expiration_month_margin_start">11dp</dimen>
+
+    <!--MaintenanceAppointmentBooked-->
+    <dimen name="maintenance_appointment_booked_header_height">330dp</dimen>
+    <dimen name="maintenance_appointment_booked_car_icon_width">202dp</dimen>
+    <dimen name="maintenance_appointment_booked_car_icon_height">137dp</dimen>
+    <dimen name="maintenance_appointment_booked_chat_icon_width">57dp</dimen>
+    <dimen name="maintenance_appointment_booked_chat_icon_height">61dp</dimen>
+
+    <!--MaintenanceServicesOngoing-->
+    <dimen name="maintenance_services_ongoing_header_height">236dp</dimen>
+
+    <!--Dialogs-->
+    <!--Car chooser dialog-->
+    <dimen name="car_chooser_dialog_margin_top">252dp</dimen>
+
+    <!--City chooser dialog-->
+    <dimen name="city_chooser_dialog_margin_top">252dp</dimen>
+
+    <!--PurchasePlan-->
+    <dimen name="purchase_plan_confirmation_ongoing_header_height">330dp</dimen>
+
+    <!--Discovery-->
+
+    <!-- Card View -->
+    <dimen name="default_card_view_corner_radius">2dp</dimen>
+    <dimen name="default_card_view_card_elevation">5dp</dimen>
+    <dimen name="default_card_view_card_max_elevation">10dp</dimen>
+    <dimen name="default_card_view_corner_max_radius">10dp</dimen>
+    <dimen name="default_card_view_stroke_width">1dp</dimen>
+
+    <!--Paperworks on boarding image-->
+    <dimen name="on_boarding_paper_works_image">203dp</dimen>
+
+    <!-- Rounded size -->
+    <dimen name="bottomSheet_corner_size">12dp</dimen>
+    <dimen name="bottomSheet_large_corner_size">24dp</dimen>
+    <dimen name="dialog_corner_size">8dp</dimen>
+    <dimen name="card_corner_size_small">4dp</dimen>
+
+    <!-- NoSwipingViewPager -->
+    <dimen name="no_swiping_viewpager_height">130dp</dimen>
+
+    <!-- Time Line View -->
+    <dimen name="time_line_start">17dp</dimen>
+
+    <!-- cardComponentViewPager -->
+    <dimen name="card_component_viewpager_height">240dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    
+    <dimen name="margin_bottom_button">96dp</dimen>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/c_user_credit"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Persona fisica"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_arrow_right"
+        android:layout_width="@dimen/dp_12"
+        android:layout_height="@dimen/dp_12"
+        app:srcCompat="@drawable/ic_arrow_right"
+        android:tint="@color/color_242142"
+        app:layout_constraintTop_toTopOf="@id/tv_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@drawable/ic_divider"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

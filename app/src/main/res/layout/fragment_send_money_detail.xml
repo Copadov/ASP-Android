@@ -1,0 +1,245 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <asp.android.aspandroidmaterial.ui.toolbars.ASPMaterialToolbarMainDashboard
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/toolbar_top_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/b_continue_send_money">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_send_money_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/send_money_account"
+                android:textAppearance="@style/Ubuntu.w500.color_242142.s20"
+                android:paddingHorizontal="@dimen/dp_16"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_send_money_account"
+                app:cardCornerRadius="@dimen/dp_18"
+                android:elevation="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginHorizontal="@dimen/dp_16">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/dp_12"
+                    android:layout_marginStart="@dimen/dp_20">
+
+                    <!-- TODO: CHANGE THIS BELOW AND CREATE COMPONENT IF NEEDED -->
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/container_name"
+                        android:layout_width="@dimen/dp_64"
+                        android:layout_height="@dimen/dp_64"
+                        android:background="@drawable/circle_icon"
+                        android:padding="@dimen/dp_8"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <ImageView
+                            android:id="@+id/iv_background_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_circle_not_shadow"
+                            app:tint="@color/color_7993BE"/>
+
+                        <TextView
+                            android:id="@+id/tv_full_name_first_letters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:text="JM"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/Ubuntu.w500.color_white.s24"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="@id/container_name"
+                        app:layout_constraintBottom_toBottomOf="@id/container_name"
+                        app:layout_constraintStart_toEndOf="@id/container_name"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <TextView
+                            android:id="@+id/tv_full_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="@tools:sample/full_names"
+                            android:textAppearance="@style/Ubuntu.w500.color_242142.s16"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/tv_bank_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="BBVA Bancomer"
+                            android:textAppearance="@style/Ubuntu.w400.color_818084.s12"
+                            android:layout_marginTop="@dimen/dp_4"
+                            app:layout_constraintTop_toBottomOf="@id/tv_full_name"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/c_account"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.Material3.Light"
+                    android:paddingHorizontal="@dimen/dp_16">
+
+                    <TextView
+                        android:id="@+id/tv_amount_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+                        android:text="Ingresa monto a transferir*"
+                        android:layout_marginTop="@dimen/dp_8" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/tv_amount_title"
+                        android:layout_marginVertical="@dimen/dp_16"
+                        app:hintEnabled="false"
+                        app:prefixText="$"
+                        app:hintTextAppearance="@style/Ubuntu.w400.color_818084.s16"
+                        app:boxStrokeColor="@color/color_7993BE"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxCornerRadiusBottomEnd="@dimen/dp_16"
+                        app:boxCornerRadiusBottomStart="@dimen/dp_16"
+                        app:boxCornerRadiusTopEnd="@dimen/dp_16"
+                        app:boxCornerRadiusTopStart="@dimen/dp_16">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ti_amount"
+                            android:textAppearance="@style/Ubuntu.w400.color_818084.s16"
+                            android:layout_width="match_parent"
+                            android:inputType="numberDecimal"
+                            android:layout_height="match_parent"
+                            tools:hint="$0.00"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:theme="@style/Theme.Material3.Light"
+                    android:paddingHorizontal="@dimen/dp_16">
+
+                    <TextView
+                        android:id="@+id/tv_concept_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+                        android:text="Concepto*"
+                        android:layout_marginTop="@dimen/dp_8" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_concept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/tv_concept_title"
+                        android:layout_marginVertical="@dimen/dp_16"
+                        app:hintEnabled="false"
+                        app:hintTextAppearance="@style/Ubuntu.w400.color_818084.s16"
+                        app:boxStrokeColor="@color/color_7993BE"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxCornerRadiusBottomEnd="@dimen/dp_16"
+                        app:boxCornerRadiusBottomStart="@dimen/dp_16"
+                        app:boxCornerRadiusTopEnd="@dimen/dp_16"
+                        app:boxCornerRadiusTopStart="@dimen/dp_16">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ti_concept"
+                            android:textAppearance="@style/Ubuntu.w400.color_818084.s16"
+                            android:layout_width="match_parent"
+                            android:inputType="textCapWords"
+                            android:maxLength="40"
+                            android:textAllCaps="true"
+                            android:layout_height="match_parent"
+                            tools:hint="Transferencia de fondos"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <asp.android.aspandroidmaterial.ui.inputs.ASPTextNumberInput
+                    android:id="@+id/ti_reference"
+                    app:layout_constraintTop_toBottomOf="@id/c_account"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+        android:id="@+id/b_continue_send_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_42"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="@string/confirm"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/margin_bottom_button"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

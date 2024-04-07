@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/noka_semibold</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+        <item name="android:textSize">@dimen/title_text_size_large</item>
+        <item name="lineHeight">@dimen/title_text_size_large_line_height</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+    <style name="TextAppearance.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/noka_semibold</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+        <item name="android:textSize">@dimen/title_text_size_medium</item>
+        <item name="lineHeight">@dimen/title_text_size_medium_line_height</item>
+        <item name="android:textColor">?colorOnSurface</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+    <style name="TextAppearance.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/noka_semibold</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+        <item name="android:textSize">@dimen/title_text_size_small</item>
+        <item name="lineHeight">@dimen/title_text_size_small_line_height</item>
+        <item name="android:textColor">?colorOnSurface</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+    <style name="TextAppearance.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/noka_semibold</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/title_text_size_large</item>
+        <item name="lineHeight">@dimen/title_text_size_large_line_height</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+    <style name="TextAppearance.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/noka_semibold</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+        <item name="android:textSize">@dimen/title_text_size_medium</item>
+        <item name="lineHeight">@dimen/title_text_size_medium_line_height</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+    <style name="TextAppearance.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/noka_semibold</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+        <item name="android:textSize">@dimen/title_text_size_small</item>
+        <item name="lineHeight">@dimen/title_text_size_small_line_height</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/noka_semibold</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+        <item name="lineHeight">@dimen/subtitle_text_size_line_height</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.01875</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/noka_semibold</item>
+        <item name="android:fontFamily">@font/noka_semibold</item>
+        <item name="lineHeight">@dimen/subtitle_text_size_line_height</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.01875</item>
+    </style>
+
+    <style name="TextAppearance.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="lineHeight">@dimen/body_text_size_line_height</item>
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+    <style name="TextAppearance.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="lineHeight">@dimen/body_text_size_line_height</item>
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.01875</item>
+    </style>
+
+    <style name="TextAppearance.Body3" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="lineHeight">@dimen/body_text_size_small_line_height</item>
+        <item name="android:textSize">@dimen/body_text_size_small</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+    <style name="TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="lineHeight">@dimen/button_text_size_line_height</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.01875</item>
+    </style>
+
+    <style name="TextAppearance.SafeSymbolH2" parent="">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/title_text_size_medium</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.01875</item>
+    </style>
+
+    <style name="TextAppearance.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="lineHeight">@dimen/caption_text_size_line_height</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:letterSpacing">0.01875</item>
+    </style>
+
+    <style name="TextAppearance.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/overline_text_size</item>
+        <item name="lineHeight">@dimen/overline_size_text_line_height</item>
+        <item name="android:textColor">?colorSecondary</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+    <style name="TextAppearanceOverlay.Bold" parent="">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TextAppearanceOverlay.Bold.black" parent="">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">@dimen/body_text_size</item>
+    </style>
+
+    <style name="TextAppearanceOverlay.Caption" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+
+</resources>

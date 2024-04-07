@@ -1,0 +1,15 @@
+package asp.android.asppagos.utils
+
+enum class ServerErrorCodes {
+    SUCCESS,
+    ERROR,
+    EMPTY_DATA,
+    EMPTY_MANDATORY_DATA,
+    PHONE_EXIST,
+    RFC_CURP_EXISTS,
+    VALIDATION_NOT_REACHED,
+    EMAIL_SEND_NOT_REACHED,
+    REGISTER_NOT_FOUND,
+    EMAIL_NOT_MATCH,
+    EMAIL_NOT_VERIFIED
+}

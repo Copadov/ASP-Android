@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/alertDialogPayment"
+    android:background="@drawable/ic_rectangle_with_stroke"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/iconAlert"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/asp_alert_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.108" />
+
+            <TextView
+                android:id="@+id/doPaymentTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="¿Deseas realizar el pago?"
+                android:textColor="@color/asp_icon_button_text_color"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iconAlert"
+                app:layout_constraintVertical_bias="0.132" />
+
+            <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+                android:id="@+id/doPaymentBtn"
+                style="@style/ColoredButtonV2"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="@dimen/dp_80"
+                android:allowClickWhenDisabled="true"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/accept"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/doPaymentTxt"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelPaymentBtn"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:allowClickWhenDisabled="true"
+                android:backgroundTint="@color/asp_flat_button_line_color"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="Rechazar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/doPaymentBtn"
+                app:layout_constraintVertical_bias="0.362" />
+
+            <!-- asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV4
+
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+
+                /-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

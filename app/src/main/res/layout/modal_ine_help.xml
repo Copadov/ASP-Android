@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_background">
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/icon_round_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_reference_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_56"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center"
+        android:text="@string/ine_info_title_text"
+        android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_divider" />
+
+    <ImageView
+        android:id="@+id/iv_reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_ine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_important_description"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="#00306A"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginTop="32dp"
+        android:text="@string/ine_info_important_text"
+        android:textAppearance="@style/Ubuntu.w700.color_242142.s16"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reference_title"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tv_important_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/ine_message"
+        android:textAppearance="@style/UbuntuMediumC3C3C3B.w400.s10"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV3
+        android:id="@+id/btn_continue"
+        style="@style/ColoredButtonV2"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="@dimen/dp_80"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/continue_flow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_reference" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

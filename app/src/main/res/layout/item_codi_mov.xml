@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="102dp"
+    android:layout_width="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.card.MaterialCardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/transaction_item_main"
+        tools:ignore="MissingDefaultResource">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardLayoutCodi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/transaction_item_date"
+                android:layout_width="150dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:paddingTop="5dp"
+                android:textColor="@color/asp_edittext_text_color"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.242"
+                tools:text="20/12/2022-09:45:33"/>
+
+            <TextView
+                android:id="@+id/transaction_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingTop="8dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/ubuntu_regular"
+                android:maxLines="1"
+                android:textColor="@color/asp_edittext_hint_color"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transaction_item_date"
+                app:layout_constraintVertical_bias="1.0"
+                tools:text="Esta es una descripcion bastante grande para probar que tanto puede crecerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/text_amount_green"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/transaction_item_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.508"
+                android:id="@+id/transaction_item_amount"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/detailMovItemMov"
+                tools:text="+$ 5000" />
+
+            <ImageView
+                android:id="@+id/detailMovItemMov"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/chevron_left_card_detail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="@+id/transaction_item_amount"
+                app:layout_constraintVertical_bias="0.05"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toEndOf="@+id/transaction_item_name"
+                android:baselineAlignBottom="@+id/transaction_item_name"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/icon_square_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/transaction_item_state"
+        android:elevation="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

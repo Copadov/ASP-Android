@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="top"
+        android:layout_width="wrap_content"
+        android:src="@drawable/up_wave"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:src="@drawable/low_wave"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.onboarding.RegisterLogin">
+
+        <asp.android.aspandroidmaterial.ui.toolbars.ASPTMaterialToolbar
+            android:id="@+id/ASPTMaterialToolbarRegisterLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iconasp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/icon_login_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ASPTMaterialToolbarRegisterLogin"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/textViewRegisterLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/register_login_toolbar_text"
+            android:textColor="#242142"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconasp"
+            app:layout_constraintStart_toEndOf="@+id/iconasp"
+            app:layout_constraintTop_toTopOf="@+id/iconasp" />
+
+        <asp.android.aspandroidmaterial.ui.spinners.ASPMaterialSpinnerCountryCode
+            android:id="@+id/spinnerCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iconasp" />
+
+        <asp.android.aspandroidmaterial.ui.inputs.ASPMaterialEditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:hint="@string/register_login_hint_input_text"
+            android:inputType="phone"
+            android:maxLength="10"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerCountry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spinnerCountry"
+            app:layout_constraintTop_toTopOf="@+id/spinnerCountry" />
+
+        <asp.android.aspandroidmaterial.ui.buttons.ASPMaterialIconButtonV5
+            android:id="@+id/continueButton"
+            style="@style/ColoredButtonV2"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="24dp"
+            android:enabled="false"
+            android:text="@string/register_login_continue_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/indicadorDots" />
+
+        <asp.android.aspandroidmaterial.ui.layouts.ASPMaterialDotsIndicator
+            android:id="@+id/indicadorDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:dotsCount="2"
+            app:dotsSelected="0"
+            app:layout_constraintBottom_toBottomOf="@+id/continueButton"
+            app:layout_constraintEnd_toStartOf="@+id/continueButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/continueButton" />
+
+        <TextView
+            android:id="@+id/textInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textColor="#333333"
+            android:textSize="11sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCountry"
+            tools:text="Captura tu celular y te enviaremos un código de confirmación."
+            tools:visibility="visible" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:textAppearance="@style/Ubuntu.w500.color_242142.s14"
+    android:paddingVertical="@dimen/dp_16"
+    android:ellipsize="end"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/dp_16"
+    android:maxLines="1"
+    tools:text="BANAMEX"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,159 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "2:8922889785792606450",
+      "lastPropertyId": "25:3469750868432198451",
+      "name": "PendingPaymentPushNotificationDBModel",
+      "properties": [
+        {
+          "id": "1:842789054719086989",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5358973497390870759",
+          "name": "idByService",
+          "type": 9
+        },
+        {
+          "id": "3:2210533606066167774",
+          "name": "hp",
+          "type": 5
+        },
+        {
+          "id": "4:3840666536429041916",
+          "name": "e",
+          "type": 5
+        },
+        {
+          "id": "5:8180444846574156697",
+          "name": "cc",
+          "type": 9
+        },
+        {
+          "id": "6:3601004019412004230",
+          "name": "mt",
+          "type": 5
+        },
+        {
+          "id": "7:7399251344585959706",
+          "name": "hs",
+          "type": 5
+        },
+        {
+          "id": "8:5395510789469616152",
+          "name": "pc",
+          "type": 9
+        },
+        {
+          "id": "9:8735911556375068670",
+          "name": "cr",
+          "type": 9
+        },
+        {
+          "id": "10:1110076970398969696",
+          "name": "cNc",
+          "type": 9
+        },
+        {
+          "id": "11:8087306763665410344",
+          "name": "cDv",
+          "type": 5
+        },
+        {
+          "id": "12:4795621352622042555",
+          "name": "cTc",
+          "type": 5
+        },
+        {
+          "id": "13:5765401324492869067",
+          "name": "cCb",
+          "type": 9
+        },
+        {
+          "id": "14:6868570457399589043",
+          "name": "cCi",
+          "type": 5
+        },
+        {
+          "id": "15:8292156052840550289",
+          "name": "cNb",
+          "type": 9
+        },
+        {
+          "id": "16:5626499946210123233",
+          "name": "vNc",
+          "type": 9
+        },
+        {
+          "id": "17:9208392879518793833",
+          "name": "vDv",
+          "type": 5
+        },
+        {
+          "id": "18:3573558673003910385",
+          "name": "vTc",
+          "type": 5
+        },
+        {
+          "id": "19:4475144543253550695",
+          "name": "vCb",
+          "type": 9
+        },
+        {
+          "id": "20:4109751416993145159",
+          "name": "vCi",
+          "type": 5
+        },
+        {
+          "id": "21:610631458578306152",
+          "name": "vNb",
+          "type": 9
+        },
+        {
+          "id": "22:166599602546035153",
+          "name": "vNb2",
+          "type": 9
+        },
+        {
+          "id": "23:3308672780978269366",
+          "name": "vCb2",
+          "type": 9
+        },
+        {
+          "id": "24:1491707980225437315",
+          "name": "vTc2",
+          "type": 9
+        },
+        {
+          "id": "25:3469750868432198451",
+          "name": "edoPet",
+          "type": 5
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:8922889785792606450",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    6414822714051407711
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    583281537722923616,
+    866298428580815623,
+    5658489448012828047,
+    9121523883508616780
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

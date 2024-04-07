@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutFragmentBuyer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.codi.CodiDetailsBuyerFragment"
+    android:layout_marginTop="60dp"
+    android:background="@color/colorPrimaryLightMaterial70"
+    android:nestedScrollingEnabled="true">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/lnLayoutTittle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/line_selected">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="16dp"
+            android:text="Información del comprador"
+            android:textColor="@color/white"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnLayoutTittle"
+        android:id="@+id/linearLayoutFolio">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/buyerName"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:paddingStart="12dp"
+                android:text="Nombre del comprador"
+                android:textAlignment="viewStart"
+                android:textColor="@color/link_color"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtInputBuyer"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buyerName"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:paddingStart="12dp"
+                android:text="251sassadgsdgs2gd"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtInputBuyer"
+                app:srcCompat="@drawable/separator_line_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/linearLayoutAccount"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutFolio">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/buyerAccount"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:paddingStart="12dp"
+                android:text="Número de cuenta"
+                android:textAlignment="viewStart"
+                android:textColor="@color/link_color"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtInputAccount"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buyerAccount"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:paddingStart="12dp"
+                android:text="251sassadgsdgs2gd"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/lnLayoutVendor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutAccount"
+        android:background="@color/line_selected">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="16dp"
+            android:text="Información del vendedor"
+            android:textColor="@color/white"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnLayoutVendor"
+        android:id="@+id/linearLayoutVendorName">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/vendorName"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:paddingStart="12dp"
+                android:text="Nombre del vendedor"
+                android:textAlignment="viewStart"
+                android:textColor="@color/link_color"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtInputVendor"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vendorName"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:paddingStart="12dp"
+                android:text="251sassadgsdgs2gd"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtInputVendor"
+                app:srcCompat="@drawable/separator_line_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutVendorName"
+        android:id="@+id/linearLayoutVendorAcc">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/vendorAcc"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:paddingStart="12dp"
+                android:text="Número de cuenta"
+                android:textAlignment="viewStart"
+                android:textColor="@color/link_color"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtInputAccvendor"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vendorAcc"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:paddingStart="12dp"
+                android:text="251sassadgsdgs2gd"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtInputAccvendor"
+                app:srcCompat="@drawable/separator_line_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

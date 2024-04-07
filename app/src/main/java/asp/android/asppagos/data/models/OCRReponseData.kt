@@ -1,0 +1,30 @@
+package asp.android.asppagos.data.models
+
+data class OCRResponseData(
+    var calle: String = "",
+    var ciudad: String = "",
+    var claveElector: String = "",
+    var codigoBarras: String = "",
+    var codigoValidacion: String = "",
+    var colonia: String = "",
+    var curp: String = "",
+    var edad: String = "",
+    var emision: String = "",
+    var estado: String = "",
+    var fechaNacimiento: String = "",
+    var folio: String = "",
+    var localidad: String = "",
+    var municipio: String = "",
+    var nombres: String = "",
+    var ocr: String = "",
+    var primerApellido: String = "",
+    var registro: String = "",
+    var seccion: String = "",
+    var segundoApellido: String = "",
+    var sexo: String = "",
+    var subTipo: String = "",
+    var tipo: String = "",
+    var vigencia: String = "",
+    var status: String = "",
+    var mensaje: String = ""
+)
