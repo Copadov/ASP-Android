@@ -13,7 +13,7 @@ plugins {
 
 sonar {
   properties {
-    property "sonar.projectKey", "ASP_Pagos_Android"
-    property "sonar.projectName", "ASP_Pagos_Android"
+    property "sonar.projectKey", "ASPAndroidCore"
+    property "sonar.projectName", "ASPAndroidCore"
   }
 }
